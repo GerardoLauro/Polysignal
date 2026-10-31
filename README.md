@@ -507,9 +507,9 @@ crashing.
 
 The dashboard never recomputes forecasting/SPI, retrains models, or calls any
 API/LLM. The `real_optional` profile carries explicit sparse-coverage
-warnings — see `docs/BRANCH_10_DASHBOARD.md` for the
+warnings — see [dashboard setup and boundaries](docs/RUN_APP.md) for the
 full claim boundaries. To point the loader elsewhere, set
-`POLYSIGNAL_DASHBOARD_DATA_ROOT=/path/to/root`.
+`POLYSIGNAL_DATA_DIR=/path/to/data`.
 
 ## CLI
 
