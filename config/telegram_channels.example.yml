@@ -1,0 +1,9 @@
+channels:
+  - name: example_crypto_channel
+    username: examplecrypto
+    domain: crypto
+    enabled: true
+  - name: example_politics_channel
+    username: examplepolitics
+    domain: politics
+    enabled: false

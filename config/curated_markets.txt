@@ -1,0 +1,73 @@
+# PolySignal curated product markets (re-selected 2026-06-14).
+# Resolved, high-volume, binary YES/NO Polymarket markets with verified
+# full-lifetime CLOB price timelines, chosen to ALIGN with the collected
+# social channels (crypto + geopolitics/war + macro). One Gamma condition id
+# per line; lines starting with '#' are ignored. Ingest with:
+#   polysignal polymarket ingest-curated --ids-file config/curated_markets.txt
+
+# --- ACTIVE: aligned with config/telegram_channels.yml channels ---
+
+# US forces enter Iran by April 30?  (YES, ~$269M, geopolitics/military)
+# -> intelslava, warmonitors, disclosetv, SpectatorIndex
+0x6d0e09d0f04572d9b1adad84703458b0297bc5603b69dccbde93147ee4443246
+
+# Russia x Ukraine ceasefire by May 31, 2026?  (YES, ~$141M, geopolitics)
+# -> KyivIndependent_official, UkraineNow, nexta_live, intelslava, warmonitors
+0xa93b28a6384aefff4e7d5adb2061c444e4a0e95b8ad17755f9cee123c7099b35
+
+# Fed decreases interest rates by 50+ bps after January 2026 meeting?  (NO, ~$235M, macro)
+# -> FinancialJuice, WatcherGuru, livemint, PriceToSurprise
+0x17815081230e3b9c78b098162c33b1ffa68c4ec29c123d3d14989599e0c2e113
+
+# Will Bitcoin reach $150,000 in February?  (NO, ~$29M, crypto)
+# -> cointelegraph, cryptonews_official, CryptoComOfficial, WatcherGuru, bitcoin, whale_alert
+0x5e5c9dfaf695371a0cc321b47b35f66a6dbd1482f0503526603d2bd2a91bfdc7
+
+# --- ADDED 2026-06-14 (broader, heavily-discussed geopolitics; verified price history) ---
+# Picked from scripts/out/resolved_market_candidates.json. These match the war /
+# geopolitics channels (intelslava, warmonitors, disclosetv, SpectatorIndex,
+# nexta_live, UkraineNow) far better than the narrow exact-threshold markets.
+
+# US x Iran permanent peace deal by May 31, 2026?  (~$88M, 443 price points)
+0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089
+
+# Will the Iranian regime fall by May 31?  (~$38M, 438 price points)
+0x789c947a9415600d30d56a4aae88d4111996679b0caed166d0c96242fdce92a2
+
+# Strait of Hormuz traffic returns to normal by end of May?  (~$35M, 473 price points)
+0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c
+
+# --- ADDED 2026-06-15: REFLEXIVE / socially-determined markets (social pressure ---
+# --- is a CAUSE of the outcome, not just a correlate). Elections + a leadership ---
+# --- ouster. Opinion coverage now comes from Reddit via Scrapling stealth       ---
+# --- (old.reddit /top/?t=year), since these need advocacy, not news-wire        ---
+# --- reporting. Hungary was previously deselected for "no channel"; Reddit       ---
+# --- unlocks it. Verified live CLOB price history (probed 2026-06-15).           ---
+
+# Will the next Prime Minister of Hungary be Viktor Orban?  (~$25.5M, 258 price days)
+# -> r/hungary, r/europe   (HERO: election = pure social-pressure outcome)
+0x5ec80dc407457301f282a2b44341947afc700dfaa7923d14c8894e04bc63b03f
+
+# Will Andre Ventura win the 2026 Portugal presidential election?  (~$19.4M, 165 price days)
+# -> r/portugal, r/europe
+0xbcb33ad98c8141b10f2350ef687eddf0660484ecc15be42ecdae64339e64dce1
+
+# Khamenei out as Supreme Leader of Iran by February 28?  (~$131M, leadership/protest)
+# -> osintdefender, MiddleEastEye, intelslava, rybar (Telegram) + r/iran, r/NewIran
+0xd4bbf7f6707c67beb736135ad32a41f6db41f8ae52d3ac4919650de9eeb94ed8
+
+# --- DESELECTED 2026-06-14: no collected channel covers these topics, so every ---
+# --- collected post scored "unrelated" against them. Re-enable only if you add ---
+# --- a sports / Hungarian-politics channel to config/telegram_channels.yml.    ---
+
+# Will Arsenal win the 2025-26 English Premier League?  (sports — no channel)
+# 0xcba24842ceac7a40d2a8b9adde1f4407999b6505193b9fd68156ae76fbffa706
+
+# Will the next Prime Minister of Hungary be Peter Magyar?  (niche election — no channel)
+# 0x1480b819d03d4b6388d70e848b0384adf38c38d955cb783cdbcf6d4a436dee14
+
+# --- TO ADD (broaden coverage): run `python scripts/discover_markets.py` to find more ---
+# --- high-volume RESOLVED binary markets in crypto / Russia-Ukraine / Iran / Fed and  ---
+# --- paste their condition ids above. Broader, heavily-discussed questions (e.g. a    ---
+# --- major BTC price milestone, a Trump/election outcome, a ceasefire) convert far    ---
+# --- more of the firehose into linked evidence than narrow exact-threshold markets.   ---

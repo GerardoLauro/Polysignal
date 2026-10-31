@@ -1,0 +1,523 @@
+post_id,platform,market_id,category,search_query,query_type,collected_at,url,author_id,author_name,author_url,author_followers,published_at,text,language,hashtags,mentioned_entities,sentiment_label,sentiment_compound,like_count,reply_count,repost_count,view_count,comment_sample_count
+telegram:1072723547:70017,telegram,,,,telegram_channel,2026-05-31T22:06:55.864189Z,https://t.me/cointelegraph/70017,1072723547,Cointelegraph,,,2026-05-29T14:20:29Z,,,[],[],neutral,0.0,,,37.0,12458.0,0
+telegram:1072723547:70018,telegram,,,,telegram_channel,2026-05-31T22:06:55.863642Z,https://t.me/cointelegraph/70018,1072723547,Cointelegraph,,,2026-05-29T15:11:08Z,"🚨 HUGE: Coinbase just became the first CFTC-regulated platform giving U.S. institutions access to global crypto perpetual futures and options markets.
+
+News | Markets | YouTube",,[],"[{'text': 'Coinbase', 'label': 'org'} {'text': 'HUGE', 'label': 'misc'}
+ {'text': 'CFTC-regulated', 'label': 'misc'}
+ {'text': 'U.S', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.6633,,0.0,100.0,14121.0,0
+telegram:1072723547:70019,telegram,,,,telegram_channel,2026-05-31T22:06:55.862640Z,https://t.me/cointelegraph/70019,1072723547,Cointelegraph,,,2026-05-29T15:11:09Z,,,[],[],neutral,0.0,,,99.0,13664.0,0
+telegram:1072723547:70020,telegram,,,,telegram_channel,2026-05-31T22:06:55.861642Z,https://t.me/cointelegraph/70020,1072723547,Cointelegraph,,,2026-05-29T15:20:21Z,"🚨 INSIGHT: Some wallets look clean until their history says otherwise.
+
+@web3_antivirus_io helps reveal what is behind the address.
+
+See toxic score, wallet health, approvals, transactions and alerts without requiring a wallet connection 🌐
+
+News | Markets | YouTube",,[],"[{'text': 'INSIGHT', 'label': 'misc'} {'text': 'Some', 'label': 'misc'}
+ {'text': 'See', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.6486,,0.0,42.0,10262.0,0
+telegram:1072723547:70021,telegram,,,,telegram_channel,2026-05-31T22:06:55.861642Z,https://t.me/cointelegraph/70021,1072723547,Cointelegraph,,,2026-05-29T18:16:01Z,,,[],[],neutral,0.0,,8.0,49.0,10939.0,0
+telegram:1072723547:70022,telegram,0x2865bc483dd523f4a36eb961f7467c8635ee9a13f39748bad55f645ce1f61512,politics,,telegram_channel,2026-05-31T22:06:55.860641Z,https://t.me/cointelegraph/70022,1072723547,Cointelegraph,,,2026-05-29T18:16:01Z,"🇺🇸 UPDATE: U.S. oil prices fell below $87 per barrel for the first time since April as President Trump said he is making a final decision on Iran.
+
+News | Markets | YouTube",,[],"[{'text': 'Trump', 'label': 'person'} {'text': 'IRAN', 'label': 'loc'}
+ {'text': 'UPDATE', 'label': 'misc'} {'text': 'U.S', 'label': 'misc'}
+ {'text': 'April', 'label': 'misc'}
+ {'text': 'President Trump', 'label': 'misc'}
+ {'text': 'Iran. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,,48.0,10801.0,0
+telegram:1072723547:70023,telegram,,,,telegram_channel,2026-05-31T22:06:55.859640Z,https://t.me/cointelegraph/70023,1072723547,Cointelegraph,,,2026-05-29T21:01:01Z,,,[],[],neutral,0.0,,5.0,57.0,10882.0,0
+telegram:1072723547:70024,telegram,0x3b2f19935f2a969634a7aca52b69cf653d957ec6243bdfcb97dd830003e90624,politics,,telegram_channel,2026-05-31T22:06:55.859640Z,https://t.me/cointelegraph/70024,1072723547,Cointelegraph,,,2026-05-29T21:01:01Z,"🇮🇷 NEW: President Trump has delayed a final decision on Iran’s latest proposal as the White House weighs a possible extension of the ceasefire, according to the New York Times.
+
+News | Markets | YouTube",,[],"[{'text': 'Trump', 'label': 'person'} {'text': 'IRAN', 'label': 'loc'}
+ {'text': 'White House', 'label': 'org'} {'text': 'NEW', 'label': 'misc'}
+ {'text': 'President Trump', 'label': 'misc'}
+ {'text': 'York Times. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.2263,,,58.0,10858.0,0
+telegram:1072723547:70025,telegram,0x19ee98e348c0ccb341d1b9566fa14521566e9b2ea7aed34dc407a0ec56be36a2,finance,,telegram_channel,2026-05-31T22:06:55.858640Z,https://t.me/cointelegraph/70025,1072723547,Cointelegraph,,,2026-05-30T05:35:15Z,"🚨 ETFS: Blackrock's ETF has been red every day for the past 2 weeks.
+
+Overall, The US Bitcoin ETFs just closed its 3rd consecutive red week.
+
+That's over $3.5B in net outflows since May 11th.
+
+News | Markets | YouTube",,[],"[{'text': 'Blackrock', 'label': 'org'} {'text': 'US', 'label': 'loc'}
+ {'text': 'Bitcoin', 'label': 'product'} {'text': 'ETFS', 'label': 'misc'}
+ {'text': ""Blackrock's ETF"", 'label': 'misc'}
+ {'text': 'Overall', 'label': 'misc'}
+ {'text': 'US Bitcoin ETFs', 'label': 'misc'}
+ {'text': ""That's"", 'label': 'misc'} {'text': 'May', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,4.0,54.0,10394.0,0
+telegram:1072723547:70026,telegram,,,,telegram_channel,2026-05-31T22:06:55.857641Z,https://t.me/cointelegraph/70026,1072723547,Cointelegraph,,,2026-05-30T06:03:21Z,"🚨 OPINION: Jamie Dimon vows banks will fight crypto’s CLARITY bill.
+
+News | Markets | YouTube",,[],"[{'text': 'OPINION', 'label': 'misc'}
+ {'text': 'Jamie Dimon', 'label': 'misc'}
+ {'text': 'CLARITY', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.2103,,3.0,54.0,9863.0,0
+telegram:1072723547:70027,telegram,,,,telegram_channel,2026-05-31T22:06:55.857641Z,https://t.me/cointelegraph/70027,1072723547,Cointelegraph,,,2026-05-30T06:03:22Z,,,[],[],neutral,0.0,,,54.0,9529.0,0
+telegram:1072723547:70028,telegram,0x95534417f10863c4b7e4bd71c070fdc6c0b0c25b6fd10f87a3142f66dc00e835,politics,,telegram_channel,2026-05-31T22:06:55.856598Z,https://t.me/cointelegraph/70028,1072723547,Cointelegraph,,,2026-05-30T09:32:51Z,"🚨 HUGE: Circle froze a Zama protocol contract, locking $12.6M in user funds and sparking concerns over its power to freeze onchain assets, per ZachXBT.
+
+News | Markets | YouTube",,[],"[{'text': 'HUGE', 'label': 'misc'} {'text': 'Circle', 'label': 'misc'}
+ {'text': 'Zama', 'label': 'misc'}
+ {'text': 'ZachXBT. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.6037,,0.0,45.0,9121.0,0
+telegram:1072723547:70029,telegram,,,,telegram_channel,2026-05-31T22:06:55.856598Z,https://t.me/cointelegraph/70029,1072723547,Cointelegraph,,,2026-05-30T09:32:51Z,,,[],[],neutral,0.0,,,44.0,8910.0,0
+telegram:1072723547:70030,telegram,0x62e939fbcb26aee4f172520444ef43a83adf3ea6155e2ae5d0871c13accdf21b,finance,,telegram_channel,2026-05-31T22:06:55.855597Z,https://t.me/cointelegraph/70030,1072723547,Cointelegraph,,,2026-05-30T12:51:18Z,"🚨 TODAY: Gravity Bridge was just drained of $5.4M.
+
+The hacker managed to launder a portion of it and still holds over $4.2M in $ETH.
+
+News | Markets | YouTube",,[],"[{'text': 'ETH', 'label': 'product'} {'text': 'TODAY', 'label': 'misc'}
+ {'text': 'Gravity Bridge', 'label': 'misc'}
+ {'text': 'ETH. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.3612,,0.0,49.0,9000.0,0
+telegram:1072723547:70031,telegram,0xbc67af13da50b8d9282d5f332b8835f8ab039c8f584a78695fddf1450a1c8679,sports,,telegram_channel,2026-05-31T22:06:55.854598Z,https://t.me/cointelegraph/70031,1072723547,Cointelegraph,,,2026-05-30T15:18:14Z,"🚨 IPO: OpenAI is reportedly in talks to add JPMorgan and Citigroup to its IPO banking lineup, alongside Goldman Sachs and Morgan Stanley.
+
+News | Markets | YouTube",,[],"[{'text': 'Openai', 'label': 'org'} {'text': 'IPO', 'label': 'misc'}
+ {'text': 'JPMorgan', 'label': 'misc'}
+ {'text': 'Citigroup', 'label': 'misc'}
+ {'text': 'Goldman Sachs', 'label': 'misc'}
+ {'text': 'Morgan Stanley. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,0.0,34.0,7982.0,0
+telegram:1072723547:70032,telegram,,,,telegram_channel,2026-05-31T22:06:55.854598Z,https://t.me/cointelegraph/70032,1072723547,Cointelegraph,,,2026-05-30T15:18:15Z,,,[],[],neutral,0.0,,,36.0,7773.0,0
+telegram:1072723547:70033,telegram,0x26c10c27cde58e2d6214d65ab562d8142d34723b3b6ec3f40836d24f6d22dfc9,sports,,telegram_channel,2026-05-31T22:06:55.853597Z,https://t.me/cointelegraph/70033,1072723547,Cointelegraph,,,2026-05-30T15:52:15Z,"🇺🇸 LUMMIS: ""If the United States doesn't establish the global standard for digital asset regulation, someone else will.""
+
+News | Markets | YouTube",,[],"[{'text': 'United States', 'label': 'loc'}
+ {'text': 'LUMMIS', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.6486,,0.0,47.0,9066.0,0
+telegram:1072723547:70034,telegram,,,,telegram_channel,2026-05-31T22:06:55.852597Z,https://t.me/cointelegraph/70034,1072723547,Cointelegraph,,,2026-05-30T16:01:12Z,"🚨 JUST IN: Zcash releases emergency Zebra update fixing critical consensus and DoS vulnerabilities.
+
+News | Markets | YouTube",,[],"[{'text': 'JUST IN', 'label': 'misc'} {'text': 'Zcash', 'label': 'misc'}
+ {'text': 'Zebra', 'label': 'misc'} {'text': 'DoS', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.6705,,0.0,33.0,7594.0,0
+telegram:1072723547:70035,telegram,,,,telegram_channel,2026-05-31T22:06:55.852597Z,https://t.me/cointelegraph/70035,1072723547,Cointelegraph,,,2026-05-30T17:03:20Z,"🇪🇺 LATEST: EU plans unified crypto tax and gambling tax, targeting €20B in revenue from 2028–2034.
+
+News | Markets | YouTube",,[],"[{'text': 'LATEST', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.3818,,0.0,72.0,7938.0,0
+telegram:1072723547:70036,telegram,0x02dc46f4354c1cc447577db82ba62cca1bda737bd67b73fe966ce1bfe580868f,finance,,telegram_channel,2026-05-31T22:06:55.851598Z,https://t.me/cointelegraph/70036,1072723547,Cointelegraph,,,2026-05-30T19:00:59Z,"🔥 UPDATE: After a suspicious 116% intraday surge, Genius says it found no undisclosed reason for the stock's massive surge.
+
+They're currently investigating the unusual trading activity with market surveillance firm ShareIntel.
+
+News | Markets | YouTube",,[],"[{'text': 'UPDATE', 'label': 'misc'} {'text': 'After', 'label': 'misc'}
+ {'text': 'Genius', 'label': 'misc'} {'text': ""They're"", 'label': 'misc'}
+ {'text': 'ShareIntel. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.7269,,0.0,24.0,7327.0,0
+telegram:1072723547:70037,telegram,0xaa145cf5714455f546afe53037b8712df749ba96c04820c2d41f37f877f29697,politics,,telegram_channel,2026-05-31T22:06:55.850597Z,https://t.me/cointelegraph/70037,1072723547,Cointelegraph,,,2026-05-30T20:00:00Z,"🇺🇸 LATEST: U.S. judge halts Trump’s $1.8B “weaponization” fund pending legal review.
+
+News | Markets | YouTube",,[],"[{'text': 'Trump', 'label': 'person'} {'text': 'LATEST', 'label': 'misc'}
+ {'text': 'U.S', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.128,,1.0,30.0,7225.0,0
+telegram:1072723547:70038,telegram,,,,telegram_channel,2026-05-31T22:06:55.850597Z,https://t.me/cointelegraph/70038,1072723547,Cointelegraph,,,2026-05-30T20:00:00Z,,,[],[],neutral,0.0,,,30.0,6987.0,0
+telegram:1072723547:70039,telegram,0xd49b9f68568892e828085f84a31e811a24f4481aea5cd08ab62261810ec0d402,politics,,telegram_channel,2026-05-31T22:06:55.849596Z,https://t.me/cointelegraph/70039,1072723547,Cointelegraph,,,2026-05-30T21:00:00Z,"🇨🇳 NEW: China is reportedly considering a national clearinghouse for digital yuan transactions to support broader adoption.
+
+News | Markets | YouTube",,[],"[{'text': 'China', 'label': 'loc'} {'text': 'NEW', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.4019,,0.0,43.0,7193.0,0
+telegram:1072723547:70040,telegram,,,,telegram_channel,2026-05-31T22:06:55.848596Z,https://t.me/cointelegraph/70040,1072723547,Cointelegraph,,,2026-05-30T21:00:01Z,,,[],[],neutral,0.0,,,43.0,6915.0,0
+telegram:1072723547:70041,telegram,,,,telegram_channel,2026-05-31T22:06:55.848596Z,https://t.me/cointelegraph/70041,1072723547,Cointelegraph,,,2026-05-30T21:04:10Z,"🚨 INSIGHT: Arthur Hayes predicts that HYPE will hit $150.
+
+News | Markets | YouTube",,[],"[{'text': 'INSIGHT', 'label': 'misc'}
+ {'text': 'Arthur Hayes', 'label': 'misc'}
+ {'text': 'HYPE', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,2.0,41.0,7148.0,0
+telegram:1072723547:70042,telegram,,,,telegram_channel,2026-05-31T22:06:55.847595Z,https://t.me/cointelegraph/70042,1072723547,Cointelegraph,,,2026-05-30T21:04:11Z,,,[],[],neutral,0.0,,,43.0,6861.0,0
+telegram:1072723547:70043,telegram,,,,telegram_channel,2026-05-31T22:06:55.846595Z,https://t.me/cointelegraph/70043,1072723547,Cointelegraph,,,2026-05-30T22:04:02Z,"🔥 LATEST: Nvidia-powered Windows PCs are reportedly set to debut next week from Microsoft, Dell, and other manufacturers.
+
+News | Markets | YouTube",,[],"[{'text': 'Nvidia', 'label': 'product'}
+ {'text': 'LATEST', 'label': 'misc'}
+ {'text': 'Nvidia-powered Windows PCs', 'label': 'misc'}
+ {'text': 'Microsoft', 'label': 'misc'} {'text': 'Dell', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.34,,1.0,46.0,7432.0,0
+telegram:1072723547:70044,telegram,,,,telegram_channel,2026-05-31T22:06:55.846595Z,https://t.me/cointelegraph/70044,1072723547,Cointelegraph,,,2026-05-30T22:04:03Z,,,[],[],neutral,0.0,,,47.0,7320.0,0
+telegram:1072723547:70045,telegram,,,,telegram_channel,2026-05-31T22:06:55.845595Z,https://t.me/cointelegraph/70045,1072723547,Cointelegraph,,,2026-05-31T00:00:00Z,"🚨 JUST IN: The SEC says a Texas man spent $6.2M of investor funds on personal expenses while marketing fake AI crypto trading software.
+
+News | Markets | YouTube",,[],"[{'text': 'SEC', 'label': 'org'} {'text': 'JUST IN', 'label': 'misc'}
+ {'text': 'Texas', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.4767,,2.0,45.0,7039.0,0
+telegram:1072723547:70046,telegram,0x8f3a5a7a725e2e60aac0c59e50c9f2c6b5c1b22164696a71320d275234c742ce,politics,,telegram_channel,2026-05-31T22:06:55.844595Z,https://t.me/cointelegraph/70046,1072723547,Cointelegraph,,,2026-05-31T01:00:00Z,"🔥 INSANE: Crypto lobbying groups spent 11X more on republicans than on democrats.
+
+News | Markets | YouTube",,[],"[{'text': 'INSANE', 'label': 'misc'} {'text': 'Crypto', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.7297,,3.0,47.0,7064.0,0
+telegram:1072723547:70047,telegram,0x813451b970c8aae23a9b2441fd9be8367e8691a636323ced76f6fd1914c1e0a8,politics,,telegram_channel,2026-05-31T22:06:55.844595Z,https://t.me/cointelegraph/70047,1072723547,Cointelegraph,,,2026-05-31T03:01:15Z,"🇺🇸🇬🇧🇦🇺 TECH: AUKUS nations will develop new underwater drones to protect critical undersea cables and strengthen military capabilities.
+
+News | Markets | YouTube",,[],"[{'text': 'TECH', 'label': 'misc'} {'text': 'AUKUS', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.3818,,1.0,41.0,7353.0,0
+telegram:1072723547:70048,telegram,,,,telegram_channel,2026-05-31T22:06:55.843594Z,https://t.me/cointelegraph/70048,1072723547,Cointelegraph,,,2026-05-31T07:05:47Z,"📊 MARKET: There are almost 2X more shorts than longs, per Coinglass.
+
+News | Markets | YouTube",,[],"[{'text': 'MARKET', 'label': 'misc'} {'text': 'There', 'label': 'misc'}
+ {'text': 'Coinglass. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,3.0,51.0,6999.0,0
+telegram:1072723547:70049,telegram,0x31e0d4320eb9666e93e20f989061f3eee82e80de9caff260cdeb9c0a4946093b,finance,,telegram_channel,2026-05-31T22:06:55.842629Z,https://t.me/cointelegraph/70049,1072723547,Cointelegraph,,,2026-05-31T08:07:56Z,"🇹🇼 NEW: NVIDIA now spends over $100B a year in Taiwan.
+
+News | Markets | YouTube",,[],"[{'text': 'Nvidia', 'label': 'product'} {'text': 'Taiwan', 'label': 'loc'}
+ {'text': 'NEW', 'label': 'misc'}
+ {'text': 'Taiwan. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,0.0,39.0,7036.0,0
+telegram:1072723547:70050,telegram,,,,telegram_channel,2026-05-31T22:06:55.842629Z,https://t.me/cointelegraph/70050,1072723547,Cointelegraph,,,2026-05-31T08:07:57Z,,,[],[],neutral,0.0,,,40.0,6881.0,0
+telegram:1072723547:70051,telegram,,,,telegram_channel,2026-05-31T22:06:55.841629Z,https://t.me/cointelegraph/70051,1072723547,Cointelegraph,,,2026-05-31T09:05:19Z,"🚨 GOLD: Gold is testing its 200-day moving average. 
+
+Reuters analysts say a break lower could send prices toward $4,098, while a move above $4,773 could revive the bull case.
+
+News | Markets | YouTube",,[],"[{'text': 'GOLD', 'label': 'misc'} {'text': 'Gold', 'label': 'misc'}
+ {'text': 'Reuters', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.0516,,0.0,88.0,13994.0,0
+telegram:1072723547:70052,telegram,0x3c48454b4c8fcbbbd85c2df47a12231965ac41c1a919e400fc019b46131f0c50,politics,,telegram_channel,2026-05-31T22:06:55.840629Z,https://t.me/cointelegraph/70052,1072723547,Cointelegraph,,,2026-05-31T10:02:40Z,"🇻🇳 HUGE: Vietnam has proposed allowing SMEs to use digital assets and intellectual property as collateral for bank loans.
+
+News | Markets | YouTube",,[],"[{'text': 'HUGE', 'label': 'misc'} {'text': 'Vietnam', 'label': 'misc'}
+ {'text': 'SMEs', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.7925,,0.0,71.0,9002.0,0
+telegram:1072723547:70053,telegram,0x31e0d4320eb9666e93e20f989061f3eee82e80de9caff260cdeb9c0a4946093b,finance,,telegram_channel,2026-05-31T22:06:55.840629Z,https://t.me/cointelegraph/70053,1072723547,Cointelegraph,,,2026-05-31T11:03:39Z,"🇦🇷 BUSTED: Argentine authorities arrested 24 people and seized over $8 million in crypto.
+
+This was all during a  nationwide crackdown on alleged investment fraud schemes.
+
+News | Markets | YouTube",,[],"[{'text': 'BUSTED', 'label': 'misc'}
+ {'text': 'Argentine', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.7845,,0.0,36.0,6890.0,0
+telegram:1072723547:70054,telegram,,,,telegram_channel,2026-05-31T22:06:55.839629Z,https://t.me/cointelegraph/70054,1072723547,Cointelegraph,,,2026-05-31T11:03:39Z,,,[],[],neutral,0.0,,,35.0,6813.0,0
+telegram:1072723547:70055,telegram,0x2603d5576c488e4f2a4fa41677917044e796917b2ff251d639b635062fe6b068,finance,,telegram_channel,2026-05-31T22:06:55.838629Z,https://t.me/cointelegraph/70055,1072723547,Cointelegraph,,,2026-05-31T12:01:23Z,"🚨 LATEST: Bitcoin sentiment just hit its most bullish level of 2026 even with $2.97B in $BTC ETF outflows.
+
+Santiment says this historically happens before another pull-back.
+
+News | Markets | YouTube",,[],"[{'text': 'Bitcoin', 'label': 'product'}
+ {'text': 'BTC', 'label': 'product'} {'text': 'LATEST', 'label': 'misc'}
+ {'text': 'BTC ETF', 'label': 'misc'}
+ {'text': 'Santiment', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,3.0,47.0,7191.0,0
+telegram:1072723547:70056,telegram,,,,telegram_channel,2026-05-31T22:06:55.838629Z,https://t.me/cointelegraph/70056,1072723547,Cointelegraph,,,2026-05-31T14:04:41Z,"🚨 SAYLOR: ""Working ₿etter.""
+
+It's that time of the week.
+
+News | Markets | YouTube",,[],"[{'text': 'SAYLOR', 'label': 'misc'} {'text': 'Working', 'label': 'misc'}
+ {'text': ""It's"", 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,4.0,38.0,6599.0,0
+telegram:1072723547:70057,telegram,0xcef981d46a1039b6ae02f578d2208302a8a3d63465d24363a1d65a86835a1ae8,politics,,telegram_channel,2026-05-31T22:06:55.837629Z,https://t.me/cointelegraph/70057,1072723547,Cointelegraph,,,2026-05-31T16:41:40Z,"🇺🇸 HUGE: Trump says it's time to physically audit Fort Knox which hasn't been comprehensively audited since 1953.
+
+News | Markets | YouTube",,[],"[{'text': 'Trump', 'label': 'person'} {'text': 'HUGE', 'label': 'misc'}
+ {'text': 'Fort Knox', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.4648,,4.0,42.0,5102.0,0
+telegram:1072723547:70058,telegram,,,,telegram_channel,2026-05-31T22:06:55.836628Z,https://t.me/cointelegraph/70058,1072723547,Cointelegraph,,,2026-05-31T17:02:46Z,"🚨 INSIGHT: Goldman Sachs forecasts AI-related capex to reach $905 billion in 2027.
+
+News | Markets | YouTube",,[],"[{'text': 'INSIGHT', 'label': 'misc'}
+ {'text': 'Goldman Sachs', 'label': 'misc'}
+ {'text': 'AI-related', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0258,,0.0,28.0,4960.0,0
+telegram:1072723547:70059,telegram,,,,telegram_channel,2026-05-31T22:06:55.836628Z,https://t.me/cointelegraph/70059,1072723547,Cointelegraph,,,2026-05-31T18:01:16Z,"🚨 NEW: JPMorgan CEO Jamie Dimon warned that stablecoins could ""blow up"" under the proposed CLARITY Act.
+
+What do you think?
+
+News | Markets | YouTube",,[],"[{'text': 'NEW', 'label': 'misc'}
+ {'text': 'JPMorgan CEO Jamie Dimon', 'label': 'misc'}
+ {'text': 'CLARITY Act.', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.3254,,3.0,34.0,4939.0,0
+telegram:1072723547:70060,telegram,,,,telegram_channel,2026-05-31T22:06:55.835628Z,https://t.me/cointelegraph/70060,1072723547,Cointelegraph,,,2026-05-31T18:01:17Z,,,[],[],neutral,0.0,,,35.0,4886.0,0
+telegram:1072723547:70061,telegram,,,,telegram_channel,2026-05-31T22:06:55.834628Z,https://t.me/cointelegraph/70061,1072723547,Cointelegraph,,,2026-05-31T19:01:40Z,"🇭🇰 ADOPTION: Hong Kong is expanding its digital asset ecosystem with tokenization, crypto products, and blockchain infrastructure.
+
+News | Markets | YouTube",,[],"[{'text': 'ADOPTION', 'label': 'misc'}
+ {'text': 'Hong Kong', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.3612,,1.0,30.0,3927.0,0
+telegram:1072723547:70062,telegram,,,,telegram_channel,2026-05-31T22:06:55.834628Z,https://t.me/cointelegraph/70062,1072723547,Cointelegraph,,,2026-05-31T19:01:41Z,,,[],[],neutral,0.0,,,30.0,3870.0,0
+telegram:1072723547:70063,telegram,0x31e0d4320eb9666e93e20f989061f3eee82e80de9caff260cdeb9c0a4946093b,finance,,telegram_channel,2026-05-31T22:06:55.833632Z,https://t.me/cointelegraph/70063,1072723547,Cointelegraph,,,2026-05-31T20:00:39Z,"🔥 AI: SoftBank will invest €45 billion in France to build large-scale AI data centres over the next five years.
+
+News | Markets | YouTube",,[],"[{'text': 'France', 'label': 'loc'} {'text': 'SoftBank', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.34,,1.0,24.0,3033.0,0
+telegram:1072723547:70064,telegram,,,,telegram_channel,2026-05-31T22:06:55.832629Z,https://t.me/cointelegraph/70064,1072723547,Cointelegraph,,,2026-05-31T20:00:40Z,,,[],[],neutral,0.0,,,23.0,3005.0,0
+telegram:1072723547:70065,telegram,,,,telegram_channel,2026-05-31T22:06:55.816929Z,https://t.me/cointelegraph/70065,1072723547,Cointelegraph,,,2026-05-31T21:04:01Z,"🚨 CZ: ""You don't have to do anything. HODL.""
+
+News | Markets | YouTube",,[],"[{'text': 'HODL', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,6.0,29.0,2037.0,0
+telegram:1072723547:70066,telegram,,,,telegram_channel,2026-05-31T22:06:55.816929Z,https://t.me/cointelegraph/70066,1072723547,Cointelegraph,,,2026-05-31T22:01:48Z,"⚡ PAIN: 2026 has wiped out $500B from the Total Crypto Market.
+
+News | Markets | YouTube",,[],"[{'text': 'PAIN', 'label': 'misc'}
+ {'text': 'Total Crypto Market. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.6166,,1.0,16.0,303.0,0
+telegram:1072723547:69761,telegram,,,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69761,1072723547,Cointelegraph,,,2026-05-17T17:01:32Z,"🚨 ALERT: Global oil stockpiles expected to hit record lows.
+
+News | Markets | YouTube",,[],"[{'text': 'ALERT', 'label': 'misc'} {'text': 'Global', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.2808,,0.0,34.0,8900.0,0
+telegram:1072723547:69762,telegram,,,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69762,1072723547,Cointelegraph,,,2026-05-17T18:00:00Z,"🚀 LATEST: Space stocks are soaring, with the S&P Kensho Global Space Index up almost 36% year-to-date.
+
+News | Markets | YouTube",,[],"[{'text': 'LATEST', 'label': 'misc'} {'text': 'Space', 'label': 'misc'}
+ {'text': 'S&P Kensho Global Space', 'label': 'misc'}
+ {'text': 'Index', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,0.0,35.0,8990.0,0
+telegram:1072723547:69763,telegram,0xaa145cf5714455f546afe53037b8712df749ba96c04820c2d41f37f877f29697,politics,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69763,1072723547,Cointelegraph,,,2026-05-17T19:00:00Z,"🇺🇸 JUST IN: Senate rules may block $1 billion in taxpayer funding for Trump’s White House ballroom security upgrades.
+
+News | Markets | YouTube",,[],"[{'text': 'Senate', 'label': 'org'} {'text': 'Trump', 'label': 'person'}
+ {'text': 'White House', 'label': 'org'}
+ {'text': 'JUST IN', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.128,,0.0,29.0,8872.0,0
+telegram:1072723547:69764,telegram,,,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69764,1072723547,Cointelegraph,,,2026-05-17T19:00:00Z,,,[],[],neutral,0.0,,,30.0,8601.0,0
+telegram:1072723547:69765,telegram,,,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69765,1072723547,Cointelegraph,,,2026-05-17T20:02:56Z,"🚨 UPDATE: The market is officially back to fear.
+
+News | Markets | YouTube",,[],"[{'text': 'UPDATE', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.4939,,2.0,47.0,8939.0,0
+telegram:1072723547:69766,telegram,0x1f44bd0ee7132279c4f0a4db305650f84a3abccdf5d6bf3f96bdcbcd7119ff64,finance,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69766,1072723547,Cointelegraph,,,2026-05-17T21:00:00Z,"🔥 FUN FACT: Bitcoin was never meant to reach exactly 21,000,000 BTC because rewards are paid in whole satoshis, and the final fractions are rounded down and can never be issued.
+
+News | Markets | YouTube",,[],"[{'text': 'Bitcoin', 'label': 'product'}
+ {'text': 'BTC', 'label': 'product'} {'text': 'FUN FACT', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.6867,,0.0,65.0,8846.0,0
+telegram:1072723547:69767,telegram,,,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69767,1072723547,Cointelegraph,,,2026-05-17T22:01:42Z,"🚨 LATEST: xAI just plugged Grok directly into Hermes Agent.
+
+This gives Grok instant distribution to 130k+ active users without building its own agent platform.
+
+News | Markets | YouTube",,[],"[{'text': 'LATEST', 'label': 'misc'} {'text': 'Grok', 'label': 'misc'}
+ {'text': 'Hermes Agent.', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.4019,,1.0,41.0,9153.0,0
+telegram:1072723547:69768,telegram,,,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69768,1072723547,Cointelegraph,,,2026-05-17T22:01:43Z,,,[],[],neutral,0.0,,,43.0,8967.0,0
+telegram:1072723547:69769,telegram,0x293fb49f43b12631ec4ad0617d9c0efc0eacce33416ef16f68521427daca1678,finance,,telegram_channel,2026-05-31T22:54:10.923096Z,https://t.me/cointelegraph/69769,1072723547,Cointelegraph,,,2026-05-18T00:16:19Z,"🚨 JUST IN: Over $526M were liquidated from the crypto market in the past hour, with longs taking the hardest hit at $510M as $BTC dropped to $77K.
+
+News | Markets | YouTube",,[],"[{'text': 'BTC', 'label': 'product'} {'text': 'JUST IN', 'label': 'misc'}
+ {'text': 'Over', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,3.0,37.0,8747.0,0
+telegram:1072723547:69770,telegram,0x24f38479176af2d71f64161d53bde777aef49ef1c03066510174d43a8d2a43fe,politics,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69770,1072723547,Cointelegraph,,,2026-05-18T01:04:22Z,"🇺🇸 TODAY: Senator Cynthia Lummis says, “Now let’s get the Clarity Act to the President’s desk!”
+
+News | Markets | YouTube",,[],"[{'text': 'TODAY', 'label': 'misc'}
+ {'text': 'Senator Cynthia Lummis', 'label': 'misc'}
+ {'text': 'Clarity Act', 'label': 'misc'}
+ {'text': 'President', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.4574,,4.0,179.0,23401.0,0
+telegram:1072723547:69771,telegram,,,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69771,1072723547,Cointelegraph,,,2026-05-18T01:04:23Z,,,[],[],neutral,0.0,,,178.0,22787.0,0
+telegram:1072723547:69772,telegram,,,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69772,1072723547,Cointelegraph,,,2026-05-18T02:06:15Z,"🚨 UPDATE: Aave confirms WETH LTVs have been restored to pre-incident levels across all affected V3 deployments following the rsETH technical recovery plan.
+
+News | Markets | YouTube",,[],"[{'text': 'UPDATE', 'label': 'misc'} {'text': 'Aave', 'label': 'misc'}
+ {'text': 'WETH LTVs', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.2023,,0.0,33.0,8305.0,0
+telegram:1072723547:69773,telegram,0xaa145cf5714455f546afe53037b8712df749ba96c04820c2d41f37f877f29697,politics,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69773,1072723547,Cointelegraph,,,2026-05-18T02:40:01Z,"🇺🇸 🇨🇳 JUST IN: The White House releases a fact sheet on Trump's historic deals with China, including:
+
+• 200 American-made Boeing aircraft purchased by China
+• $17B/year in U.S. agricultural product purchases
+• Rare earth supply chain commitments addressed
+• Two new bilateral trade and investment boards established
+• China restores access for U.S. beef and poultry
+
+News | Markets | YouTube",,[],"[{'text': 'White House', 'label': 'org'}
+ {'text': 'Trump', 'label': 'person'} {'text': 'China', 'label': 'loc'}
+ {'text': 'JUST IN', 'label': 'misc'} {'text': ""Trump's"", 'label': 'misc'}
+ {'text': 'American-made Boeing', 'label': 'misc'}
+ {'text': 'U.S', 'label': 'misc'} {'text': 'Rare', 'label': 'misc'}
+ {'text': 'Two', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.4019,,3.0,75.0,13560.0,0
+telegram:1072723547:69774,telegram,,,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69774,1072723547,Cointelegraph,,,2026-05-18T04:03:51Z,"🇺🇸 LATEST: White House crypto advisor Patrick Witt says passing the Clarity Act would get the crypto industry roughly 90% of what it needs.
+
+News | Markets | YouTube",,[],"[{'text': 'White House', 'label': 'org'}
+ {'text': 'LATEST', 'label': 'misc'}
+ {'text': 'Patrick Witt', 'label': 'misc'}
+ {'text': 'Clarity Act', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.4019,,2.0,88.0,14510.0,0
+telegram:1072723547:69775,telegram,,,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69775,1072723547,Cointelegraph,,,2026-05-18T04:03:51Z,,,[],[],neutral,0.0,,,94.0,17671.0,0
+telegram:1072723547:69776,telegram,0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089,politics,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69776,1072723547,Cointelegraph,,,2026-05-18T04:52:15Z,"🇺🇸 BIG: The US 30-year Treasury yield has climbed to its highest level since October 2023, hitting 5.16% as inflation fears trigger a global debt selloff.
+
+News | Markets | YouTube",,[],"[{'text': 'US', 'label': 'loc'} {'text': 'BIG', 'label': 'misc'}
+ {'text': 'Treasury', 'label': 'misc'}
+ {'text': 'October', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.5423,,1.0,60.0,12013.0,0
+telegram:1072723547:69777,telegram,0x41e47408f8ab39b46a9d9e3c9b15ebd62f1d795eb072ff46df3d376c09eb583e,politics,,telegram_channel,2026-05-31T22:54:10.917938Z,https://t.me/cointelegraph/69777,1072723547,Cointelegraph,,,2026-05-18T05:42:14Z,"🇨🇳 NOW: Chinese holdings of US Treasuries have dropped to their lowest level since the 2008 Global Financial Crisis.
+
+News | Markets | YouTube",,[],"[{'text': 'US', 'label': 'loc'} {'text': 'NOW', 'label': 'misc'}
+ {'text': 'Chinese', 'label': 'misc'}
+ {'text': 'US Treasuries', 'label': 'misc'}
+ {'text': 'Global Financial Crisis. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.7003,,1.0,73.0,12427.0,0
+telegram:1072723547:69778,telegram,0x25e73d2f118e87fc15df7cf736172737f0b82b7ec6ca6a24cd67ae341ed760fb,finance,,telegram_channel,2026-05-31T22:54:10.916935Z,https://t.me/cointelegraph/69778,1072723547,Cointelegraph,,,2026-05-18T08:00:40Z,"🇮🇷 NEW: Iran is reportedly considering a Bitcoin-based insurance system for ships passing through the Strait of Hormuz.
+
+Read more details here. 
+
+News | Markets | YouTube",,[],"[{'text': 'IRAN', 'label': 'loc'} {'text': 'Bitcoin', 'label': 'product'}
+ {'text': 'NEW', 'label': 'misc'}
+ {'text': 'Bitcoin-based', 'label': 'misc'}
+ {'text': 'Strait', 'label': 'misc'} {'text': 'Hormuz.', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,1.0,75.0,11467.0,0
+telegram:1072723547:69779,telegram,,,,telegram_channel,2026-05-31T22:54:10.916144Z,https://t.me/cointelegraph/69779,1072723547,Cointelegraph,,,2026-05-18T08:00:41Z,,,[],[],neutral,0.0,,,73.0,11036.0,0
+telegram:1072723547:69780,telegram,0x293fb49f43b12631ec4ad0617d9c0efc0eacce33416ef16f68521427daca1678,finance,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69780,1072723547,Cointelegraph,,,2026-05-18T12:05:02Z,"🔥 JUST IN: Strategy bought 24,869 $BTC for $2.01B.
+
+They now have 843,738 BTC. 
+
+News | Markets | YouTube",,[],"[{'text': 'BTC', 'label': 'product'} {'text': 'JUST IN', 'label': 'misc'}
+ {'text': 'Strategy', 'label': 'misc'}
+ {'text': 'BTC. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.34,,3.0,65.0,11389.0,0
+telegram:1072723547:69781,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69781,1072723547,Cointelegraph,,,2026-05-18T12:05:03Z,,,[],[],neutral,0.0,,,67.0,10889.0,0
+telegram:1072723547:69782,telegram,0x62e939fbcb26aee4f172520444ef43a83adf3ea6155e2ae5d0871c13accdf21b,finance,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69782,1072723547,Cointelegraph,,,2026-05-18T12:58:19Z,"🔥 NEW: Bitmine bought 71,672 $ETH last week, lifting total holdings to 5.28M $ETH equal to 4.37% of total supply.
+
+News | Markets | YouTube",,[],"[{'text': 'ETH', 'label': 'product'} {'text': 'NEW', 'label': 'misc'}
+ {'text': 'Bitmine', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.34,,1.0,46.0,11853.0,0
+telegram:1072723547:69783,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69783,1072723547,Cointelegraph,,,2026-05-18T12:58:20Z,,,[],[],neutral,0.0,,,44.0,11305.0,0
+telegram:1072723547:69784,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69784,1072723547,Cointelegraph,,,2026-05-18T17:01:01Z,"🤖 NEW: BNB Chain has launched BNBAgent SDK on mainnet, enabling AI agents to use onchain identity, autonomous payments, and persistent memory.
+
+News | Markets | YouTube",,[],"[{'text': 'NEW', 'label': 'misc'} {'text': 'BNB Chain', 'label': 'misc'}
+ {'text': 'BNBAgent SDK', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.128,,0.0,48.0,11165.0,0
+telegram:1072723547:69785,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69785,1072723547,Cointelegraph,,,2026-05-18T17:38:01Z,,,[],[],neutral,0.0,,2.0,47.0,10572.0,0
+telegram:1072723547:69786,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69786,1072723547,Cointelegraph,,,2026-05-18T17:38:01Z,"🚨 JUST IN: Elon Musk has reportedly lost his lawsuit against OpenAI and CEO Sam Altman after a jury found them not liable.
+
+News | Markets | YouTube",,[],"[{'text': 'Elon Musk', 'label': 'person'}
+ {'text': 'Openai', 'label': 'org'} {'text': 'JUST IN', 'label': 'misc'}
+ {'text': 'CEO Sam Altman', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.4939,,,49.0,10530.0,0
+telegram:1072723547:69787,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69787,1072723547,Cointelegraph,,,2026-05-18T20:16:01Z,,,[],[],neutral,0.0,,0.0,53.0,11928.0,0
+telegram:1072723547:69788,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69788,1072723547,Cointelegraph,,,2026-05-18T20:16:01Z,"🚨 ALERT: Casa co-founder Jameson Lopp warned about a new phishing technique that abuses legitimate Google recovery forms to hide malicious links inside long messages filled with blank space.
+
+News | Markets | YouTube",,[],"[{'text': 'ALERT', 'label': 'misc'} {'text': 'Casa', 'label': 'misc'}
+ {'text': 'Jameson Lopp', 'label': 'misc'}
+ {'text': 'Google', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.5372,,,54.0,11777.0,0
+telegram:1072723547:69789,telegram,,,,telegram_channel,2026-05-31T22:54:10.909235Z,https://t.me/cointelegraph/69789,1072723547,Cointelegraph,,,2026-05-19T00:06:47Z,"🚨 TODAY: Elon Musk says he will file an appeal with the Ninth Circuit after a court dismissed his case against OpenAI.
+
+News | Markets | YouTube",,[],"[{'text': 'Elon Musk', 'label': 'person'}
+ {'text': 'Openai', 'label': 'org'} {'text': 'TODAY', 'label': 'misc'}
+ {'text': 'Ninth Circuit', 'label': 'misc'}
+ {'text': 'OpenAI. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,0.0,31.0,9141.0,0
+telegram:1072723547:69790,telegram,,,,telegram_channel,2026-05-31T22:54:10.906145Z,https://t.me/cointelegraph/69790,1072723547,Cointelegraph,,,2026-05-19T00:06:47Z,,,[],[],neutral,0.0,,,31.0,8772.0,0
+telegram:1072723547:69791,telegram,0x02dc46f4354c1cc447577db82ba62cca1bda737bd67b73fe966ce1bfe580868f,finance,,telegram_channel,2026-05-31T22:54:10.906145Z,https://t.me/cointelegraph/69791,1072723547,Cointelegraph,,,2026-05-19T01:13:28Z,"🇺🇸 LATEST: The SEC rescinds its decades-old ""gag rule,"" allowing companies and individuals to no longer remain silent after reaching an enforcement settlement.
+
+News | Markets | YouTube",,[],"[{'text': 'SEC', 'label': 'org'} {'text': 'LATEST', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.4215,,0.0,55.0,12597.0,0
+telegram:1072723547:69792,telegram,0x2158d1f83118f06d7399d5000e9c44f317eb8a0801a6f588d261bf2cf2310445,politics,,telegram_channel,2026-05-31T22:54:10.906145Z,https://t.me/cointelegraph/69792,1072723547,Cointelegraph,,,2026-05-19T02:02:39Z,"🚨 JUST IN: Meta plans to cut 20% of its global workforce and shift 7,000 employees to AI initiatives as part of a major restructuring set for May 20, per Reuters.
+
+News | Markets | YouTube",,[],"[{'text': 'JUST IN', 'label': 'misc'} {'text': 'Meta', 'label': 'misc'}
+ {'text': 'May', 'label': 'misc'}
+ {'text': 'Reuters. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.2732,,1.0,58.0,8032.0,0
+telegram:1072723547:69793,telegram,,,,telegram_channel,2026-05-31T22:54:10.906145Z,https://t.me/cointelegraph/69793,1072723547,Cointelegraph,,,2026-05-19T02:02:39Z,,,[],[],neutral,0.0,,,56.0,7564.0,0
+telegram:1072723547:69794,telegram,0x9c08beafa73308625ad24e270e44d9edd634585f2424eea8df262a05a2337613,finance,,telegram_channel,2026-05-31T22:54:10.905142Z,https://t.me/cointelegraph/69794,1072723547,Cointelegraph,,,2026-05-19T02:40:04Z,"🗞 Catch up on the news over the last 24 hours!
+
+🚨 Over $526M were liquidated from the crypto market in the past hour, with longs taking the hardest hit at $510M as $BTC dropped to $77K.
+
+🇺🇸  Senator Cynthia Lummis says, “Now let’s get the Clarity Act to the President’s desk!”
+
+🚨  Aave confirms WETH LTVs have been restored to pre-incident levels across all affected V3 deployments following the rsETH technical recovery plan.
+
+🇺🇸 🇨🇳  The White House releases a fact sheet on Trump's historic deals with China.
+
+🇺🇸  White House crypto advisor Patrick Witt says passing the Clarity Act would get the crypto industry roughly 90% of what it needs.
+
+🇺🇸  The US 30-year Treasury yield has climbed to its highest level since October 2023, hitting 5.16% as inflation fears trigger a global debt selloff.
+
+🇨🇳  Chinese holdings of US Treasuries have dropped to their lowest level since the 2008 Global Financial Crisis.
+
+🇮🇷  Iran is reportedly considering a Bitcoin-based insurance system for ships passing through the Strait of Hormuz.
+
+🔥 Strategy bought 24,869 $BTC for $2.01B. They now have 843,738 $BTC.
+
+🔥 Bitmine bought 71,672 $ETH last week, lifting total holdings to 5.28M $ETH equal to 4.37% of total supply.
+
+🤖  BNB Chain has launched BNBAgent SDK on mainnet, enabling AI agents to use onchain identity, autonomous payments, and persistent memory.
+
+🚨 Elon Musk has reportedly lost his lawsuit against OpenAI and CEO Sam Altman after a jury found them not liable.
+
+🚨 Casa co-founder Jameson Lopp warned about a new phishing technique that abuses legitimate Google recovery forms to hide malicious links inside long messages filled with blank space.
+
+🚨  Elon Musk says he will file an appeal with the Ninth Circuit after a court dismissed his case against OpenAI.
+
+🇺🇸  The SEC rescinds its decades-old ""gag rule,"" allowing companies and individuals to no longer remain silent after reaching an enforcement settlement.
+
+🚨 Meta plans to cut 20% of its global workforce and shift 7,000 employees to AI initiatives as part of a major restructuring set for May 20, per Reuters.
+
+News | Markets | YouTube",,[],"[{'text': 'BTC', 'label': 'product'}
+ {'text': 'White House', 'label': 'org'}
+ {'text': 'Trump', 'label': 'person'} {'text': 'China', 'label': 'loc'}
+ {'text': 'US', 'label': 'loc'} {'text': 'IRAN', 'label': 'loc'}
+ {'text': 'Bitcoin', 'label': 'product'}
+ {'text': 'ETH', 'label': 'product'}
+ {'text': 'Elon Musk', 'label': 'person'}
+ {'text': 'Openai', 'label': 'org'} {'text': 'SEC', 'label': 'org'}
+ {'text': 'Catch', 'label': 'misc'} {'text': 'Over', 'label': 'misc'}
+ {'text': 'Senator Cynthia Lummis', 'label': 'misc'}
+ {'text': 'Clarity Act', 'label': 'misc'}
+ {'text': 'President', 'label': 'misc'} {'text': 'Aave', 'label': 'misc'}
+ {'text': 'WETH LTVs', 'label': 'misc'}
+ {'text': ""Trump's"", 'label': 'misc'}
+ {'text': 'Patrick Witt', 'label': 'misc'}
+ {'text': 'Treasury', 'label': 'misc'}
+ {'text': 'October', 'label': 'misc'} {'text': 'Chinese', 'label': 'misc'}
+ {'text': 'US Treasuries', 'label': 'misc'}
+ {'text': 'Global Financial Crisis', 'label': 'misc'}]",negative,-0.9661,,0.0,26.0,7927.0,0
+telegram:1072723547:69795,telegram,,,,telegram_channel,2026-05-31T22:54:10.905142Z,https://t.me/cointelegraph/69795,1072723547,Cointelegraph,,,2026-05-19T04:21:11Z,"🔥 BULLISH: Bitwise announces it will hold  $HYPE on its balance sheet, allocating 10% of its Hyperliquid ETF (BHYP) management fee directly toward the token.
+
+News | Markets | YouTube",,[],"[{'text': 'BULLISH', 'label': 'misc'} {'text': 'Bitwise', 'label': 'misc'}
+ {'text': 'HYPE', 'label': 'misc'}
+ {'text': 'Hyperliquid ETF', 'label': 'misc'}
+ {'text': 'BHYP', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.34,,0.0,47.0,9231.0,0
+telegram:1072723547:69796,telegram,,,,telegram_channel,2026-05-31T22:54:10.902280Z,https://t.me/cointelegraph/69796,1072723547,Cointelegraph,,,2026-05-19T04:21:12Z,,,[],[],neutral,0.0,,,48.0,8986.0,0
+telegram:1072723547:69797,telegram,0x04e07c6085d96ecc1ac7568d6cb640f09e4d300a25afc763b67f15d8f2c8597c,finance,,telegram_channel,2026-05-31T22:54:10.902280Z,https://t.me/cointelegraph/69797,1072723547,Cointelegraph,,,2026-05-19T05:52:04Z,"🇺🇸 NEW: Kevin Warsh is set to be sworn in as the new Fed Chair on Friday, replacing Jerome Powell.
+
+News | Markets | YouTube",,[],"[{'text': 'FED', 'label': 'org'}
+ {'text': 'Jerome Powell', 'label': 'person'}
+ {'text': 'NEW', 'label': 'misc'} {'text': 'Kevin Warsh', 'label': 'misc'}
+ {'text': 'Fed Chair', 'label': 'misc'}
+ {'text': 'Friday', 'label': 'misc'}
+ {'text': 'Jerome Powell. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,0.0,47.0,9290.0,0
+telegram:1072723547:69798,telegram,,,,telegram_channel,2026-05-31T22:54:10.902280Z,https://t.me/cointelegraph/69798,1072723547,Cointelegraph,,,2026-05-19T05:52:05Z,,,[],[],neutral,0.0,,,46.0,8765.0,0
+telegram:1072723547:69799,telegram,,,,telegram_channel,2026-05-31T22:54:10.902280Z,https://t.me/cointelegraph/69799,1072723547,Cointelegraph,,,2026-05-19T06:47:16Z,"⚡️ JENSEN HUANG: “Everybody will have to use AI because if you don’t use AI, you’re gonna lose your job to somebody who does.”
+
+News | Markets | YouTube",,[],"[{'text': 'JENSEN HUANG', 'label': 'misc'}
+ {'text': 'Everybody', 'label': 'misc'} {'text': 'News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",negative,-0.4019,,2.0,54.0,9455.0,0
+telegram:1072723547:69800,telegram,,,,telegram_channel,2026-05-31T22:54:10.900764Z,https://t.me/cointelegraph/69800,1072723547,Cointelegraph,,,2026-05-19T06:47:16Z,,,[],[],neutral,0.0,,,53.0,9058.0,0
+telegram:1072723547:69801,telegram,,,,telegram_channel,2026-05-31T22:54:10.900764Z,https://t.me/cointelegraph/69801,1072723547,Cointelegraph,,,2026-05-19T07:01:27Z,"🔥 BIG: 10% of Americans used or invested in crypto in 2025, the highest level since 2022, according to a new Federal Reserve report.
+
+News | Markets | YouTube",,[],"[{'text': 'Federal Reserve', 'label': 'org'}
+ {'text': 'BIG', 'label': 'misc'} {'text': 'Americans', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.34,,0.0,64.0,14193.0,0
+telegram:1072723547:69802,telegram,,,,telegram_channel,2026-05-31T22:54:10.899761Z,https://t.me/cointelegraph/69802,1072723547,Cointelegraph,,,2026-05-19T07:01:27Z,,,[],[],neutral,0.0,,,64.0,13490.0,0
+telegram:1072723547:69803,telegram,0x293fb49f43b12631ec4ad0617d9c0efc0eacce33416ef16f68521427daca1678,finance,,telegram_channel,2026-05-31T22:54:10.899761Z,https://t.me/cointelegraph/69803,1072723547,Cointelegraph,,,2026-05-19T09:19:40Z,"📊 INSIGHT: Bitcoin HODL Waves data suggests this cycle’s bottom could form between $65.9K–$70.5K, per CryptoQuant analyst Sunny Mom.
+
+News | Markets | YouTube",,[],"[{'text': 'Bitcoin', 'label': 'product'}
+ {'text': 'INSIGHT', 'label': 'misc'}
+ {'text': 'Bitcoin HODL Waves', 'label': 'misc'}
+ {'text': 'CryptoQuant', 'label': 'misc'}
+ {'text': 'Sunny Mom. News', 'label': 'misc'}
+ {'text': 'Markets', 'label': 'misc'} {'text': 'YouTube', 'label': 'misc'}]",positive,0.4215,,0.0,58.0,10689.0,0
+telegram:1072723547:69804,telegram,0x293fb49f43b12631ec4ad0617d9c0efc0eacce33416ef16f68521427daca1678,finance,,telegram_channel,2026-05-31T22:54:10.898749Z,https://t.me/cointelegraph/69804,1072723547,Cointelegraph,,,2026-05-19T10:46:07Z,"🍕 HISTORY: 16 years ago, 10,000 $BTC bought two pizzas.
+
+Laszlo Hanyecz’s Bitcointalk post became one of Bitcoin’s first real-world transactions. Today, that 10,000 BTC would be worth over $767M.
+
+News | Markets | YouTube",,[],"[{'text': 'BTC', 'label': 'product'}
+ {'text': 'Bitcoin', 'label': 'product'}
+ {'text': 'HISTORY', 'label': 'misc'}
+ {'text': 'Laszlo Hanyecz', 'label': 'misc'}
+ {'text': 'Bitcointalk', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",positive,0.2263,,2.0,121.0,11451.0,0
+telegram:1072723547:69805,telegram,,,,telegram_channel,2026-05-31T22:54:10.895340Z,https://t.me/cointelegraph/69805,1072723547,Cointelegraph,,,2026-05-19T13:51:06Z,"🔥 JUST IN: Polymarket launched prediction markets tied to private companies using Nasdaq Private Market data.
+
+News | Markets | YouTube",,[],"[{'text': 'Nasdaq', 'label': 'product'}
+ {'text': 'JUST IN', 'label': 'misc'}
+ {'text': 'Polymarket', 'label': 'misc'}
+ {'text': 'Nasdaq Private Market', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.2263,,0.0,29.0,10755.0,0
+telegram:1072723547:69806,telegram,,,,telegram_channel,2026-05-31T22:54:10.895340Z,https://t.me/cointelegraph/69806,1072723547,Cointelegraph,,,2026-05-19T13:51:07Z,,,[],[],neutral,0.0,,,27.0,10350.0,0
+telegram:1072723547:69807,telegram,0x02dc46f4354c1cc447577db82ba62cca1bda737bd67b73fe966ce1bfe580868f,finance,,telegram_channel,2026-05-31T22:54:10.895340Z,https://t.me/cointelegraph/69807,1072723547,Cointelegraph,,,2026-05-19T17:06:40Z,"🇺🇸 LATEST: Hot U.S. inflation data sparked a crypto selloff, with BTC down 5.7%, ETH down 10.2%, and $1B leaving Bitcoin ETFs as markets began pricing in a possible Fed hike.
+
+News | Markets | YouTube",,[],"[{'text': 'BTC', 'label': 'product'} {'text': 'ETH', 'label': 'product'}
+ {'text': 'Bitcoin', 'label': 'product'} {'text': 'FED', 'label': 'org'}
+ {'text': 'LATEST', 'label': 'misc'} {'text': 'Hot U.S', 'label': 'misc'}
+ {'text': 'Bitcoin ETFs', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",neutral,0.0,,0.0,46.0,10621.0,0
+telegram:1072723547:69808,telegram,,,,telegram_channel,2026-05-31T22:54:10.895340Z,https://t.me/cointelegraph/69808,1072723547,Cointelegraph,,,2026-05-19T19:45:01Z,,,[],[],neutral,0.0,,0.0,30.0,9557.0,0
+telegram:1072723547:69809,telegram,,,,telegram_channel,2026-05-31T22:54:10.895340Z,https://t.me/cointelegraph/69809,1072723547,Cointelegraph,,,2026-05-19T19:45:01Z,"🚨 INSIGHT: Citi says a 1970s-style oil shock would likely require the Strait of Hormuz to remain closed into early 2027.
+
+News | Markets | YouTube",,[],"[{'text': 'INSIGHT', 'label': 'misc'} {'text': 'Citi', 'label': 'misc'}
+ {'text': 'Strait', 'label': 'misc'} {'text': 'Hormuz', 'label': 'misc'}
+ {'text': 'News', 'label': 'misc'} {'text': 'Markets', 'label': 'misc'}
+ {'text': 'YouTube', 'label': 'misc'}]",negative,-0.3818,,,33.0,9432.0,0
+telegram:1072723547:69810,telegram,,,,telegram_channel,2026-05-31T22:54:10.888407Z,https://t.me/cointelegraph/69810,1072723547,Cointelegraph,,,2026-05-19T22:45:01Z,,,[],[],neutral,0.0,,1.0,43.0,9533.0,0

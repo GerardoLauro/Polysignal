@@ -1,0 +1,117 @@
+%==============================================================================
+%  APPENDICES
+%  A: Reproducibility and how to run   |   B: AI-assisted development
+%==============================================================================
+\appendix
+
+\chapter{Reproducibility and How to Run}
+\label{ch:reproduce}
+The project is self-contained and portable: it targets \textbf{Python~3.11+}, declares
+every dependency in \code{pyproject.toml}, and the dashboard runs fully offline from the
+persisted pipeline artifacts --- \emph{no API keys and no internet access are required}
+to reproduce the figures, tables, and the interactive app in this report. Secrets live
+only in an untracked local \code{.env}; the shared \code{.env.example} is a blank
+template. The steps below reproduce the deliverable on a clean machine.
+
+\paragraph{1. Create an isolated environment and install.}
+The core install is enough to launch the dashboard and run the figure/test suite; the
+bracketed extras add the optional collectors and developer tooling.
+{\small\begin{verbatim}
+python -m venv .venv
+# Windows:        .venv\Scripts\activate
+# macOS / Linux:  source .venv/bin/activate
+pip install -e .                          # core: dashboard + analysis
+pip install -e ".[dev,nlp,telegram,scraping]"   # everything (optional)
+\end{verbatim}}
+
+\paragraph{2. Launch the interactive dashboard.}
+A single command builds the served payload from the artifacts in \code{data/} and opens
+the browser on a local, zero-dependency origin (CORS-free, no external calls).
+{\small\begin{verbatim}
+python scripts/serve_app.py        # cross-platform
+run_app.cmd                        # Windows one-click equivalent
+# -> http://127.0.0.1:8000/
+\end{verbatim}}
+
+\paragraph{3. Regenerate every figure and table.}
+All quantitative results are derived from the persisted artifacts by a single released
+step, so nothing in this report is hand-transcribed.
+{\small\begin{verbatim}
+python scripts/_paper_stats.py     # refresh the stats JSONs from data/
+python scripts/_paper_figs.py      # writes pdf_latex/figures/*.pdf
+pytest                             # run the test suite (757 passing)
+polysignal --help                  # explore the pipeline CLI
+\end{verbatim}}
+
+\paragraph{4. (Optional) rebuild the report PDF.}
+The \code{pdf\_latex/} folder compiles with any standard TeX toolchain --- \code{pdflatex
++ bibtex}, \code{latexmk}, \code{tectonic}, or Overleaf --- using only standard packages.
+{\small\begin{verbatim}
+cd pdf_latex && latexmk -pdf main.tex     # or: tectonic main.tex
+\end{verbatim}}
+
+\noindent\textbf{What the release bundle contains.} The publishable archive ships the
+source (\code{src/}, \code{scripts/}, \code{webapp/}, \code{tests/}), the report
+(\code{pdf\_latex/} with \code{main.pdf}), the documentation (\code{docs/}), and the
+\emph{minimal} set of \code{data/} artifacts the dashboard reads (timelines, social
+pressure, stance labels, accepted evidence, market metadata, post enrichment, and the
+analytics/backtest summaries --- about 60\,MB). The multi-gigabyte raw corpus, caches,
+virtual environment, and portable tool downloads are deliberately excluded; they are
+regenerable and carry no analytical value beyond what the shipped artifacts already
+summarise.
+
+
+\chapter{AI-Assisted Development: Tools and Repositories}
+\label{ch:aitools}
+In the interest of transparency, this appendix documents the AI-assisted development
+workflow behind PolySignal. The \emph{scientific} results are independent of it --- every
+number in this report is regenerated deterministically from the persisted artifacts
+(\Cref{ch:reproduce}), and no AI agent ever produced a result: the agents wrote
+\emph{code}, the code produced the artifacts, and the artifacts produced every figure and
+table. What the AI workflow bought was engineering throughput \emph{with} discipline.
+
+\section{AI coding assistants}
+Three command-line coding agents were used in deliberately complementary roles, so that
+no single model's blind spots went unchecked:
+\begin{description}[leftmargin=1.4em,style=nextline]
+  \item[Claude Code (Anthropic).] The primary agent for implementation, refactoring, and
+  this report. It carried the bulk of the pipeline --- ingestion, contract--post linking,
+  outcome-aware stance, the Social Pressure Index, and the leakage-controlled backtest ---
+  drove the test-first workflow, and authored and revised the \LaTeX{} of this document.
+  \item[Codex (OpenAI).] A second pair of eyes for focused code generation and
+  cross-checking: alternative implementations of tricky functions, and independent review
+  of edge cases and failure modes.
+  \item[Gemini CLI (Google).] Used for large-context sweeps across the codebase and for
+  corroborating design decisions, providing a third independent perspective on
+  architecture and data-handling choices.
+\end{description}
+Running three independent agents --- rather than trusting one --- turned model
+disagreement into a useful signal: where they agreed we proceeded with confidence; where
+they diverged, the divergence flagged exactly the spots that warranted a human decision.
+
+\section{Supporting repositories and tooling}
+\begin{description}[leftmargin=1.4em,style=nextline]
+  \item[ECC --- a comprehensive ``everything Claude Code'' framework.] ECC is an open
+  repository --- the winning entry of a 2026 hackathon --- that packages a complete Claude
+  Code setup: agent definitions, multi-agent orchestration rules, reusable skills and
+  commands, and a full set of engineering conventions (coding style and immutability, a
+  mandatory test-coverage bar, security checks against hard-coded secrets and unvalidated
+  input, and a code-review gate before any change is accepted). We adopted ECC to drive
+  and standardise the agentic workflow; it is what kept three different agents producing
+  consistent, reviewable code rather than three divergent styles, and why the repository
+  ships with \textbf{757 passing tests} and a uniform module layout.
+  \item[Graphify.] A repository-graph tool (configured through \code{.graphifyignore},
+  output under \code{graphify-out/}) that builds a navigable map of the codebase --- its
+  modules, symbols, and their relationships. It gave the agents structural context for
+  navigating a large repository, so edits respected the existing architecture
+  (\Cref{ch:architecture}) instead of reinventing it.
+\end{description}
+
+\section{How the tools were leveraged}
+The workflow composed these pieces into a single loop: plan a change with one agent,
+implement it test-first, cross-review it with a second agent, and keep every change behind
+the ECC review-and-coverage gate, using the Graphify map to land edits in the right place.
+The result is a large, well-tested, well-documented codebase and a fully reproducible
+report, produced quickly but without surrendering the scientific honesty that is the whole
+point of a null-result study. The AI tooling accelerated the \emph{engineering}; the
+\emph{evidence} remains entirely the data's.

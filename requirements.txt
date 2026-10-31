@@ -1,0 +1,6 @@
+# Convenience installation of the core package. Canonical metadata: pyproject.toml.
+# Dashboard runtime: pip install -e ".[nlp]"
+# Offline tests/build: pip install -r requirements-dev.lock, then install this package.
+# Figure regeneration additionally requires .[paper]; collectors/models have separate extras.
+# Python >=3.11 declared; the publication environment is verified on Python 3.12.
+-e .

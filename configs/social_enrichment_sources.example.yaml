@@ -1,0 +1,566 @@
+# PolySignal — Branch 12 social dataset enrichment sources.
+#
+# Two responsible public-web sources feed the enrichment pipeline:
+#   * Reddit, collected from public old.reddit.com listing pages with Scrapling
+#     (no login, no proxy rotation, no CAPTCHA / anti-bot circumvention);
+#   * Telegram, collected from public t.me/s/<channel> preview pages.
+#
+# Sources are validated at runtime. Disabled sections and sources are skipped.
+# A source carrying `status: needs_validation` is still attempted; if it blocks,
+# returns nothing usable, or fails, it is recorded in the coverage report and
+# the run continues with the remaining sources.
+
+reddit_scrapling:
+  enabled: true
+  collection_method: "scrapling_public_web"
+  # Reddit hard-blocks plain HTTP fetches (HTTP 403 on every page and .json
+  # endpoint), so the deterministic Fetcher returned zero rows. The approved
+  # scraping method (Scrapling's StealthyFetcher, a real stealth browser)
+  # renders the public old.reddit.com listing pages and is served 200s.
+  base_fetcher: "StealthyFetcher"
+  user_agent: "PolySignalUniversityResearch/0.1"
+  rate_limit_seconds: 2
+  request_timeout_seconds: 90
+  max_pages_per_source: 10
+  max_items_per_source: 300
+  store_raw_snapshots: true
+  parse_comments: true
+  notes: >
+    Reddit API/PRAW approval was unavailable (Reddit did not respond), so per
+    the professor's approval Reddit is collected via Scrapling's stealth
+    browser from public old.reddit.com listing pages only — no login, no proxy
+    rotation, no CAPTCHA solving. `?limit=100` keeps the page count (and thus
+    the number of browser launches) low.
+
+  sources:
+    # --- Reflexive / socially-determined market coverage (opinion-bearing) ---
+    - name: reddit_hungary
+      url: "https://old.reddit.com/r/hungary/new/?limit=100"
+      subreddit: "hungary"
+      domains: ["politics", "elections", "europe", "hungary"]
+      priority: "high"
+
+    - name: reddit_europe
+      url: "https://old.reddit.com/r/europe/new/?limit=100"
+      subreddit: "europe"
+      domains: ["politics", "elections", "europe", "geopolitics"]
+      priority: "high"
+
+    - name: reddit_portugal
+      url: "https://old.reddit.com/r/portugal/new/?limit=100"
+      subreddit: "portugal"
+      domains: ["politics", "elections", "europe", "portugal"]
+      priority: "high"
+
+    - name: reddit_iran
+      url: "https://old.reddit.com/r/iran/new/?limit=100"
+      subreddit: "iran"
+      domains: ["geopolitics", "iran", "middle_east"]
+      priority: "high"
+
+    - name: reddit_newiran
+      url: "https://old.reddit.com/r/NewIran/new/?limit=100"
+      subreddit: "NewIran"
+      domains: ["geopolitics", "iran", "middle_east", "protest"]
+      priority: "high"
+
+    - name: reddit_politics
+      url: "https://old.reddit.com/r/politics/new/?limit=100"
+      subreddit: "politics"
+      domains: ["politics", "elections", "us"]
+      priority: "high"
+
+    - name: reddit_worldnews
+      url: "https://old.reddit.com/r/worldnews/new/"
+      subreddit: "worldnews"
+      domains: ["geopolitics", "world_events", "news"]
+      priority: "high"
+
+    - name: reddit_news
+      url: "https://old.reddit.com/r/news/new/"
+      subreddit: "news"
+      domains: ["news", "current_events"]
+      priority: "high"
+
+    - name: reddit_geopolitics
+      url: "https://old.reddit.com/r/geopolitics/new/"
+      subreddit: "geopolitics"
+      domains: ["geopolitics"]
+      priority: "medium"
+
+    - name: reddit_political_discussion
+      url: "https://old.reddit.com/r/PoliticalDiscussion/new/"
+      subreddit: "PoliticalDiscussion"
+      domains: ["politics", "elections", "discussion"]
+      priority: "medium"
+
+    - name: reddit_cryptocurrency
+      url: "https://old.reddit.com/r/CryptoCurrency/new/"
+      subreddit: "CryptoCurrency"
+      domains: ["crypto", "web3", "markets"]
+      priority: "high"
+
+    - name: reddit_bitcoin
+      url: "https://old.reddit.com/r/Bitcoin/new/"
+      subreddit: "Bitcoin"
+      domains: ["crypto", "bitcoin"]
+      priority: "high"
+
+    - name: reddit_ethereum
+      url: "https://old.reddit.com/r/ethereum/new/"
+      subreddit: "ethereum"
+      domains: ["crypto", "ethereum", "web3"]
+      priority: "medium"
+
+    - name: reddit_ethfinance
+      url: "https://old.reddit.com/r/ethfinance/new/"
+      subreddit: "ethfinance"
+      domains: ["crypto", "ethereum", "markets"]
+      priority: "medium"
+
+    - name: reddit_stocks
+      url: "https://old.reddit.com/r/stocks/new/"
+      subreddit: "stocks"
+      domains: ["stocks", "finance", "markets"]
+      priority: "high"
+
+    - name: reddit_investing
+      url: "https://old.reddit.com/r/investing/new/"
+      subreddit: "investing"
+      domains: ["finance", "macro", "markets"]
+      priority: "high"
+
+    - name: reddit_wallstreetbets
+      url: "https://old.reddit.com/r/wallstreetbets/new/"
+      subreddit: "wallstreetbets"
+      domains: ["stocks", "finance", "markets"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: reddit_economics
+      url: "https://old.reddit.com/r/Economics/new/"
+      subreddit: "Economics"
+      domains: ["economics", "macro"]
+      priority: "medium"
+
+    - name: reddit_sports
+      url: "https://old.reddit.com/r/sports/new/"
+      subreddit: "sports"
+      domains: ["sports"]
+      priority: "medium"
+
+    - name: reddit_nba
+      url: "https://old.reddit.com/r/nba/new/"
+      subreddit: "nba"
+      domains: ["sports", "nba"]
+      priority: "high"
+
+    - name: reddit_soccer
+      url: "https://old.reddit.com/r/soccer/new/"
+      subreddit: "soccer"
+      domains: ["sports", "football"]
+      priority: "high"
+
+    - name: reddit_nfl
+      url: "https://old.reddit.com/r/nfl/new/"
+      subreddit: "nfl"
+      domains: ["sports", "nfl"]
+      priority: "medium"
+
+    - name: reddit_formula1
+      url: "https://old.reddit.com/r/formula1/new/"
+      subreddit: "formula1"
+      domains: ["sports", "f1"]
+      priority: "medium"
+
+    - name: reddit_technology
+      url: "https://old.reddit.com/r/technology/new/"
+      subreddit: "technology"
+      domains: ["technology", "tech_policy"]
+      priority: "high"
+
+    - name: reddit_artificial
+      url: "https://old.reddit.com/r/artificial/new/"
+      subreddit: "artificial"
+      domains: ["ai", "technology"]
+      priority: "medium"
+
+    - name: reddit_singularity
+      url: "https://old.reddit.com/r/singularity/new/"
+      subreddit: "singularity"
+      domains: ["ai", "technology"]
+      priority: "medium"
+
+    - name: reddit_science
+      url: "https://old.reddit.com/r/science/new/"
+      subreddit: "science"
+      domains: ["science"]
+      priority: "medium"
+
+    - name: reddit_movies
+      url: "https://old.reddit.com/r/movies/new/"
+      subreddit: "movies"
+      domains: ["culture", "movies"]
+      priority: "medium"
+
+    - name: reddit_boxoffice
+      url: "https://old.reddit.com/r/boxoffice/new/"
+      subreddit: "boxoffice"
+      domains: ["culture", "movies", "boxoffice"]
+      priority: "high"
+
+    - name: reddit_television
+      url: "https://old.reddit.com/r/television/new/"
+      subreddit: "television"
+      domains: ["culture", "tv"]
+      priority: "medium"
+
+    # --- 2026-06-21: more subreddits to widen the POST pool (politics-heavy
+    # --- markets) and broaden sports/finance/crypto coverage.
+    - name: reddit_moderatepolitics
+      url: "https://old.reddit.com/r/moderatepolitics/new/?limit=100"
+      subreddit: "moderatepolitics"
+      domains: ["politics", "elections", "us", "discussion"]
+      priority: "high"
+    - name: reddit_neoliberal
+      url: "https://old.reddit.com/r/neoliberal/new/?limit=100"
+      subreddit: "neoliberal"
+      domains: ["politics", "economics", "macro", "elections"]
+      priority: "medium"
+    - name: reddit_geopolitics2
+      url: "https://old.reddit.com/r/anime_titties/new/?limit=100"
+      subreddit: "anime_titties"
+      domains: ["geopolitics", "world_events", "news"]
+      priority: "medium"
+    - name: reddit_credibledefense
+      url: "https://old.reddit.com/r/CredibleDefense/new/?limit=100"
+      subreddit: "CredibleDefense"
+      domains: ["geopolitics", "defense", "world_events"]
+      priority: "medium"
+    - name: reddit_cryptomarkets
+      url: "https://old.reddit.com/r/CryptoMarkets/new/?limit=100"
+      subreddit: "CryptoMarkets"
+      domains: ["crypto", "markets", "trading"]
+      priority: "high"
+    - name: reddit_bitcoinmarkets
+      url: "https://old.reddit.com/r/BitcoinMarkets/new/?limit=100"
+      subreddit: "BitcoinMarkets"
+      domains: ["crypto", "bitcoin", "markets"]
+      priority: "medium"
+    - name: reddit_economy
+      url: "https://old.reddit.com/r/economy/new/?limit=100"
+      subreddit: "economy"
+      domains: ["economics", "macro", "markets"]
+      priority: "medium"
+    - name: reddit_baseball
+      url: "https://old.reddit.com/r/baseball/new/?limit=100"
+      subreddit: "baseball"
+      domains: ["sports", "mlb", "baseball"]
+      priority: "medium"
+    - name: reddit_hockey
+      url: "https://old.reddit.com/r/hockey/new/?limit=100"
+      subreddit: "hockey"
+      domains: ["sports", "nhl", "hockey"]
+      priority: "medium"
+    - name: reddit_mma
+      url: "https://old.reddit.com/r/MMA/new/?limit=100"
+      subreddit: "MMA"
+      domains: ["sports", "mma", "ufc"]
+      priority: "medium"
+
+telegram_public_web:
+  enabled: true
+  collection_method: "telegram_public_web"
+  base_url_pattern: "https://t.me/s/{channel}"
+  user_agent: "PolySignalUniversityResearch/0.1"
+  rate_limit_seconds: 4
+  request_timeout_seconds: 30
+  max_pages_per_source: 10
+  max_items_per_source: 500
+  store_raw_snapshots: true
+  notes: >
+    Telegram public channel preview pages are collected from t.me/s/<channel>
+    when accessible without login. This is used as the primary real social
+    source for PolySignal dataset enrichment.
+
+  sources:
+    # --- ADDED 2026-06-16: domain-matched channels so the 300 balanced markets
+    # --- (sports / entertainment / finance) get topic-aligned social coverage,
+    # --- not just the crypto+geopolitics channels. Each handle was validated
+    # --- live via t.me/s/<handle> (scripts/_validate_tg_channels.py).
+    # Sports (football: Champions League / Premier League / World Cup markets;
+    # US sports: NBA / NFL / NHL markets via ESPN / Bleacher Report).
+    - name: telegram_fabrizio_romano
+      channel: "FabrizioRomanoNews"
+      url: "https://t.me/s/FabrizioRomanoNews"
+      domains: ["sports", "football", "soccer", "transfers"]
+      priority: "high"
+    - name: telegram_espn
+      channel: "espn"
+      url: "https://t.me/s/espn"
+      domains: ["sports", "nba", "nfl", "soccer", "mlb"]
+      priority: "high"
+    - name: telegram_the_athletic
+      channel: "TheAthletic"
+      url: "https://t.me/s/TheAthletic"
+      domains: ["sports", "football", "nba", "nfl"]
+      priority: "high"
+    - name: telegram_bleacher_report
+      channel: "bleacherreport"
+      url: "https://t.me/s/bleacherreport"
+      domains: ["sports", "nba", "nfl", "mlb"]
+      priority: "high"
+    - name: telegram_sky_sports
+      channel: "skysports"
+      url: "https://t.me/s/skysports"
+      domains: ["sports", "football", "premier_league"]
+      priority: "high"
+    - name: telegram_onefootball
+      channel: "OneFootball"
+      url: "https://t.me/s/OneFootball"
+      domains: ["sports", "football", "soccer", "champions_league"]
+      priority: "high"
+    # Entertainment (movies / awards / GTA-style culture markets).
+    - name: telegram_variety
+      channel: "Variety"
+      url: "https://t.me/s/Variety"
+      domains: ["entertainment", "film", "tv", "awards", "culture"]
+      priority: "medium"
+    - name: telegram_netflix
+      channel: "netflix"
+      url: "https://t.me/s/netflix"
+      domains: ["entertainment", "tv", "film", "streaming"]
+      priority: "medium"
+    - name: telegram_culture_crave
+      channel: "Culture_Crave"
+      url: "https://t.me/s/Culture_Crave"
+      domains: ["entertainment", "film", "tv", "music", "culture"]
+      priority: "medium"
+    # Finance / macro (Fed / interest-rate / economy markets).
+    - name: telegram_bloomberg
+      channel: "Bloomberg"
+      url: "https://t.me/s/Bloomberg"
+      domains: ["finance", "macro", "markets", "economy"]
+      priority: "high"
+    - name: telegram_investing_com
+      channel: "Investingcom"
+      url: "https://t.me/s/Investingcom"
+      domains: ["finance", "macro", "markets", "stocks"]
+      priority: "medium"
+
+    - name: telegram_cointelegraph
+      channel: "cointelegraph"
+      url: "https://t.me/s/cointelegraph"
+      domains: ["crypto", "web3", "markets", "news"]
+      priority: "high"
+
+    - name: telegram_cointelegraph_markets
+      channel: "CTMarkets"
+      url: "https://t.me/s/CTMarkets"
+      domains: ["crypto", "bitcoin", "ethereum", "markets"]
+      priority: "high"
+
+    - name: telegram_watcher_guru
+      channel: "WatcherGuru"
+      url: "https://t.me/s/WatcherGuru"
+      domains: ["crypto", "finance", "breaking_news", "markets"]
+      priority: "high"
+
+    - name: telegram_cryptoquant
+      channel: "cryptoquant_official"
+      url: "https://t.me/s/cryptoquant_official"
+      domains: ["crypto", "onchain", "market_signals"]
+      priority: "medium"
+
+    - name: telegram_bno_news
+      channel: "BNODesk"
+      url: "https://t.me/s/BNODesk"
+      domains: ["news", "breaking_news", "geopolitics"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_deitaone
+      channel: "DeItaone"
+      url: "https://t.me/s/DeItaone"
+      domains: ["finance", "macro", "breaking_news", "markets"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_disclosetv
+      channel: "disclosetv"
+      url: "https://t.me/s/disclosetv"
+      domains: ["news", "breaking_news", "politics"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_unusual_whales
+      channel: "unusual_whales"
+      url: "https://t.me/s/unusual_whales"
+      domains: ["finance", "stocks", "markets"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_finance_headlines
+      channel: "FinancialTimes"
+      url: "https://t.me/s/FinancialTimes"
+      domains: ["finance", "macro", "news"]
+      priority: "low"
+      status: "needs_validation"
+
+    - name: telegram_crypto_news
+      channel: "CryptoNews"
+      url: "https://t.me/s/CryptoNews"
+      domains: ["crypto", "web3", "news"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_intel_republic
+      channel: "IntelRepublic"
+      url: "https://t.me/s/IntelRepublic"
+      domains: ["news", "geopolitics", "breaking_news"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_insider_paper
+      channel: "insiderpaper"
+      url: "https://t.me/s/insiderpaper"
+      domains: ["news", "politics", "breaking_news"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_rt_news
+      channel: "rtnews"
+      url: "https://t.me/s/rtnews"
+      domains: ["news", "geopolitics"]
+      priority: "low"
+      status: "needs_validation"
+
+    - name: telegram_ukraine_now
+      channel: "UkraineNow"
+      url: "https://t.me/s/UkraineNow"
+      domains: ["news", "geopolitics"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_war_monitor
+      channel: "war_monitor"
+      url: "https://t.me/s/war_monitor"
+      domains: ["news", "geopolitics"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_conflict_tr
+      channel: "ConflictTR"
+      url: "https://t.me/s/ConflictTR"
+      domains: ["news", "geopolitics"]
+      priority: "low"
+      status: "needs_validation"
+
+    - name: telegram_market_feed
+      channel: "marketfeed"
+      url: "https://t.me/s/marketfeed"
+      domains: ["finance", "markets", "macro"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_financial_juice
+      channel: "financialjuice"
+      url: "https://t.me/s/financialjuice"
+      domains: ["finance", "markets", "macro"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_fabrizio_romano
+      channel: "FabrizioRomano"
+      url: "https://t.me/s/FabrizioRomano"
+      domains: ["sports", "football"]
+      priority: "medium"
+      status: "needs_validation"
+
+    - name: telegram_deadline_hollywood
+      channel: "DeadlineHollywood"
+      url: "https://t.me/s/DeadlineHollywood"
+      domains: ["culture", "movies", "boxoffice"]
+      priority: "low"
+      status: "needs_validation"
+
+    - name: telegram_variety
+      channel: "Variety"
+      url: "https://t.me/s/Variety"
+      domains: ["culture", "movies", "television"]
+      priority: "low"
+      status: "needs_validation"
+
+twitter_public_web:
+  enabled: true
+  collection_method: "twitter_public_web"
+  base_url_pattern: "https://x.com/{username}"
+  user_agent: "PolySignalUniversityResearch/0.1"
+  rate_limit_seconds: 5.0
+  request_timeout_seconds: 30.0
+  max_items_per_source: 200
+  store_raw_snapshots: true
+  parse_comments: true
+  notes: >
+    Twitter/X public profile pages collected via Scrapling StealthyFetcher.
+    No API key required. Covers crypto, finance, sports, and prediction markets.
+
+  sources:
+    # Crypto & Prediction Markets
+    - name: twitter_polymarket
+      username: "Polymarket"
+      url: "https://x.com/Polymarket"
+      domains: ["crypto", "markets", "prediction"]
+      priority: "high"
+
+    - name: twitter_vitalik
+      username: "VitalikButerin"
+      url: "https://x.com/VitalikButerin"
+      domains: ["crypto", "ethereum", "web3"]
+      priority: "high"
+
+    - name: twitter_coinbase
+      username: "coinbase"
+      url: "https://x.com/coinbase"
+      domains: ["crypto", "markets", "exchange"]
+      priority: "high"
+
+    # Finance & Markets
+    - name: twitter_bloomberg
+      username: "Bloomberg"
+      url: "https://x.com/Bloomberg"
+      domains: ["finance", "macro", "markets", "news"]
+      priority: "high"
+
+    - name: twitter_reuters
+      username: "Reuters"
+      url: "https://x.com/Reuters"
+      domains: ["news", "finance", "geopolitics"]
+      priority: "high"
+
+    # Sports
+    - name: twitter_espn
+      username: "espn"
+      url: "https://x.com/espn"
+      domains: ["sports", "nba", "nfl", "soccer"]
+      priority: "high"
+
+    - name: twitter_fabrizioromano
+      username: "FabrizioRomano"
+      url: "https://x.com/FabrizioRomano"
+      domains: ["sports", "football", "soccer", "transfers"]
+      priority: "high"
+
+    # Entertainment & Culture
+    - name: twitter_variety
+      username: "Variety"
+      url: "https://x.com/Variety"
+      domains: ["entertainment", "film", "tv", "awards"]
+      priority: "medium"
+
+    # Tech
+    - name: twitter_techcrunch
+      username: "TechCrunch"
+      url: "https://x.com/TechCrunch"
+      domains: ["technology", "startups", "ai"]
+      priority: "medium"

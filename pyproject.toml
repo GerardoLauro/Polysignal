@@ -1,0 +1,130 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polysignal"
+version = "0.1.0"
+description = "PolySignal — A social intelligence layer for Polymarket prediction markets."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "webapp/vendor/*-LICENSE.txt"]
+authors = [{ name = "PolySignal Authors" }]
+keywords = ["polymarket", "prediction-markets", "social-media", "nlp", "knowledge-graph"]
+
+dependencies = [
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "typer>=0.12",
+    "rich>=13.7",
+    "httpx>=0.27",
+    "tenacity>=8.2",
+    "python-dateutil>=2.9",
+    "pandas>=2.2",
+    "pyarrow>=15.0",
+    "numpy>=1.26",
+    "orjson>=3.10",
+    "PyYAML>=6.0",
+    "neo4j>=5.18",
+    "plotly>=5.20",
+    "scikit-learn>=1.4",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build>=1,<2",
+    "lxml>=5.0",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.4",
+    "mypy>=1.10",
+    "hypothesis>=6.99",
+]
+# Optional historical adapter and independent tools. No collection is enabled by installation.
+social = ["praw>=7.7,<8"]
+browser = ["playwright>=1.45,<2"]
+embeddings = ["sentence-transformers>=3,<6"]
+transformer = ["transformers>=4,<5", "torch>=2.6,<3"]
+processing = ["pyspark>=3.5,<4"]
+paper = ["matplotlib>=3.8,<4"]
+llm = [
+    "openai>=1.30",
+    "anthropic>=0.25",
+]
+# Reddit is collected via Scrapling public-web only (see the `scraping` extra);
+# the Reddit OAuth API is intentionally not used by this project.
+# NLP enrichment (Traccia_2 Task 2/3): sentiment, NER, hashtags, language.
+# VADER is the lightweight always-on default; spaCy/langdetect/transformers
+# are optional upgrades that the analyzers auto-detect at runtime. Topic
+# modeling uses scikit-learn, which is already a core dependency.
+nlp = [
+    "vaderSentiment>=3.3",
+]
+nlp-full = [
+    "vaderSentiment>=3.3",
+    "spacy>=3.7",
+    "langdetect>=1.0.9",
+]
+telegram = [
+    "telethon>=1.34",
+]
+# Branch 12 — responsible public-web extraction for social dataset enrichment.
+# These power the Reddit (old.reddit.com) and Telegram (t.me/s/<channel>)
+# Scrapling adapters. They are optional: the package imports cleanly without
+# them, and the adapters raise an actionable error only when actually used.
+scraping = [
+    "scrapling[fetchers]>=0.4",
+    "curl-cffi>=0.6",
+    "feedparser>=6.0",
+    "lxml>=5.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+polysignal = "polysignal.cli.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["polysignal*"]
+
+[tool.setuptools.package-data]
+"polysignal" = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "W", "SIM", "RUF"]
+ignore = [
+    "E501",   # line length is handled by the formatter
+    "UP017",  # we deliberately use `timezone.utc` (works on all 3.11+ and is explicit)
+    "UP042",  # pydantic-style `class X(str, Enum)` is the convention here
+    "RUF001", # em-dashes / typographic punctuation in docstrings are intentional
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
+# Typer's idiomatic CLI declaration relies on ``typer.Option(...)`` and
+# ``typer.Argument(...)`` as function-default values. Ruff's B008 flags
+# this for ``Optional[Path]``-typed flags even though the framework
+# requires it, so we exempt the CLI entry point.
+"src/polysignal/cli/main.py" = ["B008"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true
+warn_unused_ignores = true
+namespace_packages = true
+explicit_package_bases = true
+mypy_path = "src"

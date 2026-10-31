@@ -1,0 +1,28 @@
+{
+  "id": "401111",
+  "conditionId": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+  "slug": "did-event-z-happen-by-march-2025",
+  "question": "Did event Z happen by March 2025?",
+  "description": "Resolves YES if event Z is officially announced before 2025-04-01 UTC.",
+  "outcomes": "[\"YES\", \"NO\"]",
+  "outcomePrices": "[\"1.0\", \"0.0\"]",
+  "clobTokenIds": "[\"11111111111111111111111111111111\", \"22222222222222222222222222222222\"]",
+  "volumeNum": 47000.0,
+  "liquidityNum": 0.0,
+  "endDate": "2025-04-01T00:00:00Z",
+  "startDate": "2024-09-01T00:00:00Z",
+  "createdAt": "2024-09-01T00:00:00Z",
+  "closed": true,
+  "active": false,
+  "archived": false,
+  "umaResolutionTimestamp": "2025-03-15T17:00:00Z",
+  "category": "Crypto",
+  "events": [
+    {
+      "id": "evt-7000",
+      "slug": "crypto-events-2025",
+      "title": "Crypto events 2025",
+      "category": "Crypto"
+    }
+  ]
+}

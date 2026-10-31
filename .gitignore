@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+.python-version
+
+# Virtual environments
+.venv/
+venv/
+env/
+# Tooling
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+# Project data (raw, normalized, cache, staging, state, reports)
+data/raw/**
+data/normalized/**
+data/analytical/**
+data/cache/**
+data/graph_exports/**
+data/staging/**
+data/state/**
+data/reports/**
+data/dataset_export/**
+!data/**/.gitkeep
+# Portable tool downloads (JDK / Neo4j / Spark) and extractions
+.tools/
+# Archived legacy / demo dataset roots (see archive/README.md)
+archive/
+# One-off discovery / maintenance scripts output
+scripts/out/
+# Telegram user sessions
+data/cache/telegram/**
+*.session
+*.session-journal
+config/telegram_channels.yml
+# Streamlit
+.streamlit/secrets.toml
+# Notebook artifacts
+.ipynb_checkpoints/
+# Local docker volumes (if mounted)
+docker_volumes/
+# Reversible quarantine of dead/stub modules (Prompt 1 cleanup)
+.trash_prompt1/
+# Packaging: all restored datasets remain outside normal Git tracking.
+data/*
+!data/README.md
+!data/examples/
+!data/examples/**
+!data/.gitkeep
+data/**/*.bundle-part
+.env.*
+!.env.example
+.claude/
+release/
+_cleanup_trash/
+*.session*
+# Verification outputs and private bundles
+.hypothesis/
+*.zip
+*.rar
+*.log
+*.bundle-part
+artifacts/

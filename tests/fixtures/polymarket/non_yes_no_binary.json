@@ -1,0 +1,14 @@
+{
+  "id": "508888",
+  "conditionId": "0xaaaa0000aaaa0000aaaa0000aaaa0000aaaa0000aaaa0000aaaa0000aaaa0000",
+  "slug": "team-a-vs-team-b-game",
+  "question": "Who will win Team A vs Team B?",
+  "outcomes": "[\"Team A\", \"Team B\"]",
+  "outcomePrices": "[\"0.55\", \"0.45\"]",
+  "clobTokenIds": "[\"100\", \"200\"]",
+  "volumeNum": 7000.0,
+  "endDate": "2025-05-30T22:00:00Z",
+  "createdAt": "2025-05-25T00:00:00Z",
+  "closed": false,
+  "category": "Sports"
+}

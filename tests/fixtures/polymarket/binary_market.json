@@ -1,0 +1,30 @@
+{
+  "id": "501234",
+  "conditionId": "0xabc123def456abc123def456abc123def456abc123def456abc123def456abcd",
+  "slug": "will-candidate-x-win-the-2025-special-election",
+  "question": "Will Candidate X win the 2025 special election?",
+  "description": "Resolves YES if Candidate X is officially declared the winner of the 2025 special election by the certifying authority.",
+  "outcomes": "[\"Yes\", \"No\"]",
+  "outcomePrices": "[\"0.62\", \"0.38\"]",
+  "clobTokenIds": "[\"71234567890123456789012345678901234567890123456789012345678901234567\", \"82345678901234567890123456789012345678901234567890123456789012345678\"]",
+  "volumeNum": 152340.55,
+  "liquidityNum": 12340.10,
+  "endDate": "2025-11-04T23:59:00Z",
+  "startDate": "2025-01-15T00:00:00Z",
+  "createdAt": "2025-01-15T00:00:00Z",
+  "updatedAt": "2025-05-01T12:00:00Z",
+  "closed": false,
+  "active": true,
+  "archived": false,
+  "category": "Politics",
+  "events": [
+    {
+      "id": "evt-9001",
+      "slug": "us-special-elections-2025",
+      "title": "US Special Elections 2025",
+      "category": "Politics",
+      "tags": [{"label": "elections"}, {"label": "us-politics"}]
+    }
+  ],
+  "tags": ["politics", "elections", "us"]
+}

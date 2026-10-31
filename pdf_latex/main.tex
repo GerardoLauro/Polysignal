@@ -1,0 +1,228 @@
+%==============================================================================
+%  PolySignal --- Technical Report
+%  Social Media Signals and Prediction Market Outcomes: A Study on Polymarket
+%  Big Data Engineering 2025/2026 --- Social Network Analysis, Track 2
+%
+%  Compile with pdfLaTeX:
+%     pdflatex main
+%     bibtex   main
+%     pdflatex main
+%     pdflatex main
+%  (or simply use latexmk -pdf main.tex, or upload the pdf_latex/ folder to
+%   Overleaf and press Recompile).
+%==============================================================================
+\documentclass[11pt,a4paper]{report}
+
+%------------------------------------------------ encoding & fonts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+%------------------------------------------------ layout
+\usepackage[a4paper,margin=2.6cm,headheight=14pt]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{emptypage}
+
+%------------------------------------------------ math & symbols
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+
+%------------------------------------------------ graphics, tables, color
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%------------------------------------------------ lists, misc
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=1.4em}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,fit,backgrounds,calc}
+
+%------------------------------------------------ palette (matches the figures)
+\definecolor{psblue}{HTML}{3B6EA5}
+\definecolor{psorange}{HTML}{C46A1F}
+\definecolor{psgreen}{HTML}{4F8A4F}
+\definecolor{psred}{HTML}{A83232}
+\definecolor{pspurple}{HTML}{6D5B97}
+\definecolor{psgrey}{HTML}{5A5A5A}
+\definecolor{pslight}{HTML}{EEF2F7}
+\definecolor{pslightgrey}{HTML}{F4F4F4}
+
+%------------------------------------------------ hyperlinks
+\usepackage[hidelinks,breaklinks=true]{hyperref}
+\hypersetup{
+  colorlinks=true, linkcolor=psblue, citecolor=psgreen,
+  urlcolor=psblue, pdftitle={PolySignal --- Technical Report},
+  pdfauthor={Francesco Simone Pirozzi, Gerardo Lauro}}
+\usepackage[nameinlink]{cleveref}
+
+%------------------------------------------------ bibliography
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{plainnat}
+
+%------------------------------------------------ chapter / section styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\bfseries}
+  {\color{psgrey}\large CHAPTER \thechapter}
+  {6pt}
+  {\Huge\color{psblue}}
+\titlespacing*{\chapter}{0pt}{-18pt}{22pt}
+\titleformat{\section}
+  {\normalfont\sffamily\large\bfseries\color{psblue!85!black}}{\thesection}{0.7em}{}
+\titleformat{\subsection}
+  {\normalfont\sffamily\normalsize\bfseries\color{psgrey}}{\thesubsection}{0.6em}{}
+
+%------------------------------------------------ headers / footers
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancyhead[L]{\footnotesize\sffamily\nouppercase{\leftmark}}
+\fancyhead[R]{\footnotesize\sffamily PolySignal}
+\fancyfoot[C]{\thepage}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+
+%------------------------------------------------ caption style
+\captionsetup{font=small,labelfont={bf,color=psblue},labelsep=period}
+\captionsetup[sub]{font=small,labelfont=bf}
+
+%------------------------------------------------ handy macros
+\newcommand{\code}[1]{\texttt{\small #1}}
+\newcommand{\unit}[1]{\,\mathrm{#1}}
+\newcommand{\pyes}{p_{\text{YES}}}
+\newcommand{\pmarket}{p_{m}}
+\newcommand{\psocial}{p_{s}}
+\newcommand{\keyfinding}[1]{%
+  \begin{center}\colorbox{pslight}{\parbox{0.93\linewidth}{\small #1}}\end{center}}
+
+% a light "callout" box for take-aways
+\newenvironment{takeaway}
+  {\par\smallskip\noindent\begin{tabular}{@{}p{0.012\linewidth}p{0.93\linewidth}@{}}
+   \textcolor{psorange}{\rule{2pt}{\baselineskip}} &}
+  {\end{tabular}\par\smallskip}
+
+% allow TeX a little extra slack on hard-to-break lines (long \texttt filenames,
+% ``a+b+c''-style feature strings) so they never spill into the margin
+\setlength{\emergencystretch}{3em}
+
+%==============================================================================
+\begin{document}
+
+%------------------------------------------------ TITLE PAGE
+\begin{titlepage}
+\centering
+\vspace*{1.2cm}
+{\sffamily\small Big Data Engineering --- A.Y. 2025/2026\par}
+{\sffamily\small Social Network Analysis Challenge, Track 2\par}
+\vspace{1.4cm}
+
+{\sffamily\bfseries\color{psblue}\Huge PolySignal\par}
+\vspace{0.5cm}
+{\sffamily\Large A Social--Intelligence Layer for\\[2pt] Polymarket Prediction Markets\par}
+\vspace{0.9cm}
+{\itshape\large Social Media Signals and Prediction Market Outcomes:\\ a data-driven study on Polymarket\par}
+
+\vspace{1.6cm}
+\begin{tikzpicture}
+\draw[psblue,line width=1pt] (0,0) -- (10,0);
+\node[fill=white,inner sep=4pt] at (5,0)
+  {\sffamily\color{psgrey} technical report};
+\end{tikzpicture}
+
+\vspace{1.4cm}
+{\large\sffamily\bfseries Francesco Simone Pirozzi \quad\textbullet\quad Gerardo Lauro\par}
+\vspace{0.4cm}
+{\sffamily\small Course instructor: Prof.\ Vincenzo Moscato\par}
+
+\vfill
+
+\begin{minipage}{0.86\linewidth}
+\small\itshape\color{psgrey}\centering
+\textbf{Research question.} Do social-media signals provide incremental
+predictive value over market-implied probabilities, across thematic domains,
+platforms, and time windows? We answer it with a reproducible, leakage-controlled
+pipeline over 300~resolved Polymarket contracts and a corpus of
+${\sim}1.36$~million social-media posts.
+\end{minipage}
+
+\vspace{1.0cm}
+{\sffamily\small June 2026\par}
+\end{titlepage}
+
+%------------------------------------------------ ABSTRACT
+\thispagestyle{empty}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\markboth{Abstract}{}
+\noindent
+Prediction markets such as Polymarket aggregate the beliefs of many traders into a
+single, continuously updated probability of a future event. Social-media platforms,
+in parallel, host the public discourse through which those beliefs form. This report
+studies, empirically and conservatively, whether that discourse carries information
+that is \emph{not already priced in} by the market.
+
+We build an end-to-end Big Data pipeline that (i)~collects \textbf{300 resolved
+binary Polymarket contracts}, balanced across politics, finance, and sports
+(100 each), together with their \textbf{full-lifetime price series}
+(1{,}353{,}114 price points); (ii)~collects a longitudinal social corpus of
+\textbf{1{,}368{,}041 posts} through source-appropriate collectors for the
+\textbf{three platforms} named by the assignment --- Telegram (MTProto), Reddit
+(public-web), and X/Twitter (authenticated automation), \textbf{all three present in
+the analysed corpus}. Telegram dominates (98.6\%), Reddit is secondary (1.2\%), and
+X/Twitter is a small but real third platform (2{,}822 posts, 0.2\%) whose scale is
+capped by X's anti-automation defences --- a limitation we document rather than paper
+over (\Cref{sec:scope}); (iii)~links posts to
+contracts with a deterministic semantic-relevance scorer; (iv)~enriches the text
+with sentiment, named entities, hashtags, language detection, and topic models;
+(v)~projects the result into a Neo4j knowledge graph; and (vi)~derives a per-market
+\emph{Social Pressure Index} that feeds a leakage-controlled backtest.
+
+The descriptive analysis confirms textbook market behaviour: market-implied
+probabilities are already strongly informative of the final outcome, and become
+monotonically more so as resolution approaches (AUC rising from $0.90$ at
+90~days to $0.99$ at close). The predictive study delivers a clear and honest
+\textbf{null result}: a market-only model attains a Brier score of $0.031$ and
+AUC $0.989$, whereas adding social features \emph{degrades} performance
+($\Delta\text{Brier}=+0.009$), and a social-only model is no better than chance
+(AUC $0.404$). We trace this to three structural causes --- a hype/optimism bias in
+social discourse, a coverage mismatch between the available channels and the market
+sample, and the informational efficiency of the market price itself --- and we argue
+that this negative result is a meaningful empirical contribution rather than a
+failure. All findings are exposed through an interactive \textbf{React} dashboard
+served from a local, zero-dependency API.
+
+\medskip
+\noindent\textit{\small Reproducibility note. Every quantitative result in this report is
+regenerated from the persisted pipeline artifacts by a single released step
+(\code{python scripts/\_paper\_figs.py}), so the figures and tables always match the
+dataset on disk and no number is hand-transcribed.}
+
+\tableofcontents
+\listoftables
+
+%------------------------------------------------ BODY
+\input{part1_foundations.tex}
+\input{part2_pipeline.tex}
+\input{part3_analysis.tex}
+\input{part4_prediction.tex}
+
+%------------------------------------------------ APPENDIX
+\input{part5_appendix.tex}
+
+%------------------------------------------------ BIBLIOGRAPHY
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PolySignal — Social-Market Intelligence</title>
+<style>
+  :root {
+    --bg: #08090a;
+    --panel: #0f1011;
+    --border: #1c1e21;
+    --accent: #34d399;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: #e8eaed;
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  #root { height: 100vh; }
+
+  /* scrollbars */
+  ::-webkit-scrollbar { width: 9px; height: 9px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #26292d; border-radius: 5px; }
+  ::-webkit-scrollbar-thumb:hover { background: #34383d; }
+
+  /* table row hover */
+  .ps-row { transition: background 0.12s; }
+  .ps-row:hover { background: rgba(255,255,255,0.025); }
+  .ps-card { transition: border-color 0.14s, transform 0.14s, background 0.14s; }
+  .ps-card:hover { border-color: #34383d; background: #121314; transform: translateY(-1px); }
+
+  /* live dot pulse */
+  @keyframes psPulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 currentColor; }
+    50% { opacity: 0.55; box-shadow: 0 0 0 3px transparent; }
+  }
+  .ps-live { animation: psPulse 2.2s ease-in-out infinite; }
+
+  @keyframes psSpin { to { transform: rotate(360deg); } }
+  .ps-spin { animation: psSpin 0.8s linear infinite; }
+
+  select option { background: #15181a; color: #e8eaed; }
+  input::placeholder { color: #5f656c; }
+  button { font-family: inherit; }
+  ::selection { background: var(--accent); color: #08090a; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Vendored locally so the app runs fully offline (no CDN dependency). -->
+  <script src="vendor/react.production.min.js"></script>
+  <script src="vendor/react-dom.production.min.js"></script>
+  <script src="vendor/babel.min.js"></script>
+
+  <!-- Same-origin API: the local server serves both this UI and the data endpoint. -->
+  <script>window.PS_API_BASE = window.location.origin;</script>
+
+  <script type="module" src="data.js"></script>
+  <script type="text/babel" data-presets="react" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" data-presets="react" src="charts.jsx"></script>
+  <script type="text/babel" data-presets="react" src="ui.jsx"></script>
+  <script type="text/babel" data-presets="react" src="universe.jsx"></script>
+  <script type="text/babel" data-presets="react" src="detail.jsx"></script>
+  <script type="text/babel" data-presets="react" src="app.jsx"></script>
+</body>
+</html>

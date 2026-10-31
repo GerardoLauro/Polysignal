@@ -1,0 +1,25 @@
+include README.md LEGGIMI.md LICENSE THIRD_PARTY_NOTICES.md Makefile
+include pyproject.toml requirements*.txt requirements*.lock MANIFEST.in
+include .env.example .gitignore .gitattributes docker-compose.yml
+include run_app.cmd run_app.sh
+include Traccia_2*.pdf
+recursive-include .github *.yml
+recursive-include scripts *.py *.json *.ps1 *.sh *.cmd *.cjs
+recursive-include config *.txt *.example.yml
+recursive-include configs *.example.yaml
+recursive-include data/examples *.csv *.md
+include data/README.md
+recursive-include docs *.md *.json
+recursive-include pdf_latex *.tex *.bib *.md *.pdf
+recursive-include webapp *.js *.jsx *.html *.txt
+recursive-include tests *.py *.json *.html
+prune .git
+prune .venv
+prune data/raw
+prune data/normalized
+prune data/analytical
+prune data/cache
+prune data/staging
+prune data/reports
+prune data/dataset_export
+global-exclude *.py[cod] *.session* *.bundle-part

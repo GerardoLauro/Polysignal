@@ -1,0 +1,222 @@
+{
+ "markets": {
+  "n": 300,
+  "by_domain": {
+   "politics": 100,
+   "sports": 98,
+   "crypto": 56,
+   "economy": 44,
+   "culture": 2
+  },
+  "by_thematic": {
+   "politics": 100,
+   "finance": 100,
+   "sports": 100
+  },
+  "resolution": {
+   "no": 243,
+   "yes": 57
+  },
+  "is_resolved": {
+   "true": 300
+  },
+  "duration_days": {
+   "count": 300.0,
+   "mean": 161.98,
+   "std": 109.27,
+   "min": 3.3,
+   "25%": 57.17,
+   "50%": 154.48,
+   "75%": 257.62,
+   "max": 425.75
+  },
+  "duration_by_domain": {
+   "politics": {
+    "count": 100.0,
+    "mean": 107.9,
+    "std": 91.6,
+    "min": 3.3,
+    "25%": 28.3,
+    "50%": 84.2,
+    "75%": 180.8,
+    "max": 366.7
+   },
+   "crypto": {
+    "count": 56.0,
+    "mean": 115.4,
+    "std": 133.5,
+    "min": 6.8,
+    "25%": 29.1,
+    "50%": 31.3,
+    "75%": 187.2,
+    "max": 365.6
+   },
+   "economy": {
+    "count": 44.0,
+    "mean": 131.0,
+    "std": 51.7,
+    "min": 82.6,
+    "25%": 103.7,
+    "50%": 132.3,
+    "75%": 132.9,
+    "max": 425.7
+   },
+   "sports": {
+    "count": 98.0,
+    "mean": 257.9,
+    "std": 54.2,
+    "min": 9.7,
+    "25%": 249.4,
+    "50%": 257.7,
+    "75%": 271.9,
+    "max": 376.2
+   },
+   "culture": {
+    "count": 2.0,
+    "mean": 150.2,
+    "std": 0.0,
+    "min": 150.2,
+    "25%": 150.2,
+    "50%": 150.2,
+    "75%": 150.2,
+    "max": 150.2
+   }
+  },
+  "volume": {
+   "count": 300.0,
+   "mean": 46833606.7,
+   "std": 52348884.7,
+   "min": 6976571.9,
+   "25%": 18564751.2,
+   "50%": 29882108.7,
+   "75%": 52824489.3,
+   "max": 400409526.9
+  },
+  "volume_by_domain": {
+   "politics": 25475582.3,
+   "crypto": 9532225.7,
+   "economy": 45288054.6,
+   "sports": 42394005.1,
+   "culture": 32499760.3
+  },
+  "liquidity": {
+   "count": 9.0,
+   "mean": 0.0,
+   "std": 0.0,
+   "min": 0.0,
+   "25%": 0.0,
+   "50%": 0.0,
+   "75%": 0.0,
+   "max": 0.0
+  },
+  "yes_no": {
+   "YES": 57,
+   "NO": 243
+  },
+  "domain_x_resolution": {
+   "NO": {
+    "crypto": 46,
+    "culture": 2,
+    "economy": 34,
+    "politics": 67,
+    "sports": 94
+   },
+   "YES": {
+    "crypto": 10,
+    "culture": 0,
+    "economy": 10,
+    "politics": 33,
+    "sports": 4
+   }
+  }
+ },
+ "price_points": {
+  "n_total": 1353114,
+  "n_markets": 300,
+  "per_market": {
+   "count": 300.0,
+   "mean": 4510.4,
+   "std": 2650.6,
+   "min": 150.0,
+   "25%": 2098.0,
+   "50%": 4899.0,
+   "75%": 6363.0,
+   "max": 8640.0
+  },
+  "yes_price_volatility": {
+   "count": 300.0,
+   "mean": 0.0734,
+   "std": 0.09,
+   "min": 0.0003,
+   "25%": 0.0032,
+   "50%": 0.0247,
+   "75%": 0.1316,
+   "max": 0.4199
+  },
+  "volatility_by_domain": {
+   "sports": 0.0025,
+   "economy": 0.0349,
+   "politics": 0.0696,
+   "crypto": 0.1266,
+   "culture": 0.0201
+  }
+ },
+ "price_informativeness_vs_horizon": [
+  {
+   "horizon_days": 0,
+   "n": 300,
+   "auc": 0.9891,
+   "brier": 0.031,
+   "accuracy": 0.9633
+  },
+  {
+   "horizon_days": 1,
+   "n": 300,
+   "auc": 0.981,
+   "brier": 0.0367,
+   "accuracy": 0.9567
+  },
+  {
+   "horizon_days": 3,
+   "n": 300,
+   "auc": 0.9739,
+   "brier": 0.0473,
+   "accuracy": 0.9333
+  },
+  {
+   "horizon_days": 7,
+   "n": 293,
+   "auc": 0.9716,
+   "brier": 0.0517,
+   "accuracy": 0.9249
+  },
+  {
+   "horizon_days": 14,
+   "n": 283,
+   "auc": 0.9727,
+   "brier": 0.0473,
+   "accuracy": 0.9364
+  },
+  {
+   "horizon_days": 30,
+   "n": 256,
+   "auc": 0.9662,
+   "brier": 0.0534,
+   "accuracy": 0.9258
+  },
+  {
+   "horizon_days": 60,
+   "n": 220,
+   "auc": 0.9327,
+   "brier": 0.0693,
+   "accuracy": 0.9091
+  },
+  {
+   "horizon_days": 90,
+   "n": 198,
+   "auc": 0.8978,
+   "brier": 0.0841,
+   "accuracy": 0.8788
+  }
+ ]
+}
